@@ -59,16 +59,16 @@ def scanForInvalidTemplates(kv,file,path):
 			#print(cwd)
 			print((' '*(len(cwdp)+1))+' [{0}] = {1}'.format(i,type(value)))
 			if type(value) is list or type(value) is KeyValues:
-				scanForInvalidTemplates(value,file,cwdp)
+				kv[i]=scanForInvalidTemplates(value,file,cwdp)
 				continue
-		return
+		return kv
 	for key in kv:
 		value=kv[key]
 		cwdp = path+[key]
 		print((' '*len(cwdp))+' {0} = {1}'.format(key,type(value)))
 		cwd = '/'.join(cwdp)
 		if type(value) is list or type(value) is KeyValues:
-			scanForInvalidTemplates(value,file,cwdp)
+			kv[key]=scanForInvalidTemplates(value,file,cwdp)
 			continue
 		if key == 'Template':
 			if value not in templates:
@@ -86,11 +86,14 @@ def scanForInvalidTemplates(kv,file,path):
 				if value in name2template:
 					if type(name2template[value]) is not list:
 						log.warning('{0} > {1}:  TFBot named "{2}" might need a Template "{3}"!'.format(file,cwd,value,name2template[value]))
+						kv['Template']=name2template[value]
+						kv._children.move_to_end('Template',last=False)
 					else:
 						log.warning('{0} > {1}:  TFBot named "{2}" might need a Template from any of the following examples:'.format(file,cwd,value))
 						for tplID in name2template[value]:
-							log.info('--------> Template "{0}"'.format(tplID))
+							log.info('  Template "{0}"'.format(tplID))
 					stats['warnings']+=1
+	return kv
 
 log.basicConfig(format='%(asctime)s [%(levelname)-8s]: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename=sys.argv[1]+'.log',filemode='w',level=log.DEBUG)
 

@@ -46,6 +46,20 @@ WaveSchedule
 				"cannot be backstabbed"             1
 			}
 		}
+		T_TFBot_Medic_QuickUber
+		{
+			Class               Medic
+			Name                "Uber Medic"
+			ClassIcon           medic_uber
+			Skill               Normal
+			Attributes          SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"ubercharge rate bonus" 5
+				"heal rate bonus"       0.1
+				"uber duration bonus"   -3
+			}
+		}
 	}
 	Mission
 	{
@@ -535,6 +549,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -648,6 +663,7 @@ WaveSchedule
 			{
 				TFBot
 				{
+					Template            T_TFBot_Giant_Heavyweapons_Natascha
 					Class               Heavyweapons
 					Name                "Giant Heavy"
 					ClassIcon           heavy_giant
@@ -1027,6 +1043,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -1178,6 +1195,7 @@ WaveSchedule
 			TotalCurrency      1000
 			TFBot
 			{
+				Template            T_TFBot_Giant_Scout
 				Class               Scout
 				Name                "Giant Scout"
 				Skill               Easy
@@ -1574,6 +1592,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -2234,6 +2253,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -3014,6 +3034,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -3871,6 +3892,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -4135,6 +4157,7 @@ WaveSchedule
 			{
 				TFBot
 				{
+					Template            T_TFBot_Giant_Heavyweapons
 					Class               Heavyweapons
 					Name                "Giant Heavy"
 					ClassIcon           heavy_giant
@@ -4195,6 +4218,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Scout_Fast
 				Class               Scout
 				Name                "Super Scout"
 				ClassIcon           scout_giant_fast
@@ -4223,6 +4247,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Soldier_Crit
 				Class               Soldier
 				Name                "Giant Charged Soldier"
 				ClassIcon           soldier_crit
@@ -4254,6 +4279,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Soldier_Spammer
 				Class               Soldier
 				Name                "Giant Rapid Fire Soldier"
 				ClassIcon           soldier_spammer
@@ -4283,6 +4309,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Pyro_Flare_Spammer
 				Class               Pyro
 				Name                "Giant Flare Pyro"
 				ClassIcon           pyro_giant
@@ -4313,6 +4340,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Pyro
 				Class               Pyro
 				Name                "Giant Pyro"
 				ClassIcon           pyro_giant
@@ -4339,6 +4367,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Demo_RapidFire
 				Class               Demoman
 				Name                "Giant Rapid Fire Demoman"
 				ClassIcon           demo_giant
@@ -4368,6 +4397,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Heavyweapons_Natascha
 				Class               Heavyweapons
 				Name                "Giant Heavy"
 				ClassIcon           heavy_giant
@@ -4396,6 +4426,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
+				Template            T_TFBot_Giant_Heavyweapons_Deflector
 				Class               Heavyweapons
 				Name                "Giant Deflector Heavy"
 				ClassIcon           heavy_deflector
@@ -5091,6 +5122,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -6166,6 +6198,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -6669,6 +6702,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Scout_Fast
 					Class               Scout
 					Name                "Super Scout"
 					Skill               Easy
@@ -6816,6 +6850,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Pyro
 					Class               Pyro
 					Name                "Giant Pyro"
 					Skill               Expert
@@ -6982,6 +7017,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Demo_RapidFire
 					Class               Demoman
 					Name                "Giant Rapid Fire Demoman"
 					Skill               Expert
@@ -7124,6 +7160,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Soldier_Crit
 					Class               Soldier
 					Name                "Giant Charged Soldier"
 					Skill               Normal
@@ -7289,6 +7326,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Heavyweapons_Natascha
 					Class               Heavyweapons
 					Name                "Giant Heavy"
 					Skill               Expert
@@ -7329,6 +7367,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -7400,6 +7439,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Medic
 					Class               Medic
 					Skill               Easy
 					Name                "Giant Medic"
@@ -7866,6 +7906,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Scout_Fast
 					Class               Scout
 					Name                "Super Scout"
 					Skill               Easy
@@ -8013,6 +8054,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Pyro
 					Class               Pyro
 					Name                "Giant Pyro"
 					Skill               Expert
@@ -8193,6 +8235,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Demo_RapidFire
 					Class               Demoman
 					Name                "Giant Rapid Fire Demoman"
 					Skill               Expert
@@ -8335,6 +8378,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Soldier_Crit
 					Class               Soldier
 					Name                "Giant Charged Soldier"
 					Skill               Normal
@@ -8513,6 +8557,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Heavyweapons_Natascha
 					Class               Heavyweapons
 					Name                "Giant Heavy"
 					Skill               Expert
@@ -8553,6 +8598,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -8624,6 +8670,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Medic
 					Class               Medic
 					Skill               Easy
 					Name                "Giant Medic"
@@ -9074,6 +9121,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Scout_Fast
 					Class               Scout
 					Name                "Super Scout"
 					Skill               Easy
@@ -9527,6 +9575,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Medic_SlowRecharge
 					Class               Medic
 					Skill               Easy
 					Name                "Uber Medic"
@@ -9598,6 +9647,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Medic
 					Class               Medic
 					Skill               Easy
 					Name                "Giant Medic"
@@ -9862,6 +9912,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Pyro
 					Class               Pyro
 					Name                "Giant Pyro"
 					Skill               Expert
@@ -10052,6 +10103,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Heavyweapons_Natascha
 					Class               Heavyweapons
 					Name                "Giant Heavy"
 					Skill               Expert
@@ -10236,6 +10288,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Demo_RapidFire
 					Class               Demoman
 					Name                "Giant Rapid Fire Demoman"
 					Skill               Expert
@@ -10394,6 +10447,7 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template            T_TFBot_Giant_Soldier_Crit
 					Class               Soldier
 					Name                "Giant Charged Soldier"
 					Skill               Normal

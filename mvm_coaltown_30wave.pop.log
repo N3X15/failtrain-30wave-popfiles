@@ -1,53 +1,65 @@
-06/04/2013 12:28:20 AM [INFO    ]: Loading includes/robot_standard.pop
-06/04/2013 12:28:20 AM [INFO    ]: Loading includes/robot_giant.pop
-06/04/2013 12:28:20 AM [INFO    ]: Loaded 59 templates.
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[1]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[2]/WaveSpawn[0]/Squad/TFBot[0]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[3]/WaveSpawn[6]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[4]/WaveSpawn/TFBot/Name:  TFBot named "Giant Scout" might need a Template "T_TFBot_Giant_Scout"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[5]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[6]/WaveSpawn[7]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[8]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[9]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[9]/WaveSpawn[8]/Squad/TFBot[0]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[0]/TFBot/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[1]/TFBot/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[2]/TFBot/Name:  TFBot named "Giant Rapid Fire Soldier" might need a Template "T_TFBot_Giant_Soldier_Spammer"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[3]/TFBot/Name:  TFBot named "Giant Flare Pyro" might need a Template "T_TFBot_Giant_Pyro_Flare_Spammer"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[4]/TFBot/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[5]/TFBot/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[6]/TFBot/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[7]/TFBot/Name:  TFBot named "Giant Deflector Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Deflector"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[11]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[13]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[0]/RandomChoice/TFBot[11]/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[1]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[2]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[3]/RandomChoice/TFBot[8]/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[4]/RandomChoice/TFBot[10]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[5]/Randomchoice/TFBot[7]/Name:  TFBot named "Giant Medic" might need a Template "T_TFBot_Giant_Medic"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[1]/RandomChoice/TFBot[11]/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[2]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[3]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[4]/RandomChoice/TFBot[8]/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[5]/RandomChoice/TFBot[10]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[6]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[6]/Randomchoice/TFBot[7]/Name:  TFBot named "Giant Medic" might need a Template "T_TFBot_Giant_Medic"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[19]/WaveSpawn/RandomChoice/TFBot[11]/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[24]/WaveSpawn/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[24]/WaveSpawn/Randomchoice/TFBot[7]/Name:  TFBot named "Giant Medic" might need a Template "T_TFBot_Giant_Medic"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[26]/WaveSpawn/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[27]/WaveSpawn/Randomchoice/TFBot[10]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[28]/WaveSpawn/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
-06/04/2013 12:28:21 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[29]/WaveSpawn[0]/Randomchoice/TFBot[8]/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
-06/04/2013 12:28:21 AM [INFO    ]: Finished scanning: 40 warnings, 0 errors.
-06/04/2013 12:28:21 AM [INFO    ]: Used templates: 4
-06/04/2013 12:28:21 AM [INFO    ]: Template T_TFBot_SentryBuster: Used 1 times.
-06/04/2013 12:28:21 AM [INFO    ]: Template T_NINJA_SPY: Used 2 times.
-06/04/2013 12:28:21 AM [INFO    ]: Template T_TFBot_Medic_QuickFix: Used 5 times.
-06/04/2013 12:28:21 AM [INFO    ]: Template T_TFBot_Medic_QuickUber: Used 3 times.
-06/04/2013 12:28:21 AM [INFO    ]: Saving to PARSED_TEMPLATES.pop...
-06/04/2013 12:28:21 AM [INFO    ]: Saved 59 templates to PARSED_TEMPLATES.pop.
-06/04/2013 12:28:21 AM [INFO    ]: Saving to mvm_coaltown_30wave.pop.new...
-06/04/2013 12:28:21 AM [INFO    ]: Saved 4 templates to mvm_coaltown_30wave.pop.new (55 skipped).
+06/04/2013 03:45:09 AM [INFO    ]: Loading includes/robot_standard.pop
+06/04/2013 03:45:09 AM [INFO    ]: Loading includes/robot_giant.pop
+06/04/2013 03:45:09 AM [INFO    ]: Loaded 59 templates.
+06/04/2013 03:45:09 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[1]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:09 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[2]/WaveSpawn[0]/Squad/TFBot[0]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
+06/04/2013 03:45:09 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[3]/WaveSpawn[6]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:09 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[4]/WaveSpawn/TFBot/Name:  TFBot named "Giant Scout" might need a Template "T_TFBot_Giant_Scout"!
+06/04/2013 03:45:09 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[5]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:09 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[6]/WaveSpawn[7]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:09 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[8]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[9]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[9]/WaveSpawn[8]/Squad/TFBot[0]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[0]/TFBot/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[1]/TFBot/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[2]/TFBot/Name:  TFBot named "Giant Rapid Fire Soldier" might need a Template "T_TFBot_Giant_Soldier_Spammer"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[3]/TFBot/Name:  TFBot named "Giant Flare Pyro" might need a Template "T_TFBot_Giant_Pyro_Flare_Spammer"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[4]/TFBot/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[5]/TFBot/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[6]/TFBot/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[10]/WaveSpawn[7]/TFBot/Name:  TFBot named "Giant Deflector Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Deflector"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[11]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[13]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[0]/RandomChoice/TFBot[11]/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[1]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[2]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[3]/RandomChoice/TFBot[8]/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[4]/RandomChoice/TFBot[10]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[5]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[15]/WaveSpawn[5]/Randomchoice/TFBot[7]/Name:  TFBot named "Giant Medic" might need a Template "T_TFBot_Giant_Medic"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[1]/RandomChoice/TFBot[11]/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[2]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[3]/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[4]/RandomChoice/TFBot[8]/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[5]/RandomChoice/TFBot[10]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[6]/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[17]/WaveSpawn[6]/Randomchoice/TFBot[7]/Name:  TFBot named "Giant Medic" might need a Template "T_TFBot_Giant_Medic"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[19]/WaveSpawn/RandomChoice/TFBot[11]/Name:  TFBot named "Super Scout" might need a Template "T_TFBot_Giant_Scout_Fast"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[24]/WaveSpawn/Randomchoice/TFBot[1]/Name:  TFBot named "Uber Medic" might need a Template "T_TFBot_Medic_SlowRecharge"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[24]/WaveSpawn/Randomchoice/TFBot[7]/Name:  TFBot named "Giant Medic" might need a Template "T_TFBot_Giant_Medic"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[26]/WaveSpawn/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Pyro" might need a Template "T_TFBot_Giant_Pyro"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[27]/WaveSpawn/Randomchoice/TFBot[10]/Name:  TFBot named "Giant Heavy" might need a Template "T_TFBot_Giant_Heavyweapons_Natascha"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[28]/WaveSpawn/Randomchoice/TFBot[9]/Name:  TFBot named "Giant Rapid Fire Demoman" might need a Template "T_TFBot_Giant_Demo_RapidFire"!
+06/04/2013 03:45:10 AM [WARNING ]: mvm_coaltown_30wave.pop > WaveSchedule/Wave[29]/WaveSpawn[0]/Randomchoice/TFBot[8]/Name:  TFBot named "Giant Charged Soldier" might need a Template "T_TFBot_Giant_Soldier_Crit"!
+06/04/2013 03:45:10 AM [INFO    ]: Finished scanning: 40 warnings, 0 errors.
+06/04/2013 03:45:10 AM [INFO    ]: Used templates: 16
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Heavyweapons_Natascha: Used 5 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Scout_Fast: Used 4 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Demo_RapidFire: Used 4 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Scout: Used 1 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Pyro_Flare_Spammer: Used 1 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Heavyweapons: Used 1 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Medic_QuickUber: Used 3 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Soldier_Spammer: Used 1 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_SentryBuster: Used 1 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_NINJA_SPY: Used 2 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Pyro: Used 4 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Heavyweapons_Deflector: Used 1 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Medic_SlowRecharge: Used 11 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Medic_QuickFix: Used 5 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Medic: Used 3 times.
+06/04/2013 03:45:10 AM [INFO    ]: Template T_TFBot_Giant_Soldier_Crit: Used 4 times.
+06/04/2013 03:45:10 AM [INFO    ]: Saving to PARSED_TEMPLATES.pop...
+06/04/2013 03:45:10 AM [INFO    ]: Saved 59 templates to PARSED_TEMPLATES.pop.
+06/04/2013 03:45:10 AM [INFO    ]: Saving to mvm_coaltown_30wave.pop.new...
+06/04/2013 03:45:10 AM [INFO    ]: Saved 16 templates to mvm_coaltown_30wave.pop.new (43 skipped).

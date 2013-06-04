@@ -2,6 +2,7 @@
 // 30wave
 
 // These MUST be in your custom/*/scripts/population folder.
+
 #base robot_giant.pop
 #base robot_standard.pop
 

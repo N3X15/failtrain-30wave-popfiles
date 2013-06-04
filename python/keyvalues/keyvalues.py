@@ -43,7 +43,20 @@ class KeyValues(collections.MutableMapping):
     # String conversion
     def __str__(self):
         return self.stringify()
-
+        
+    def get_indent_for_keys(self,d):
+        """ 
+        Returns the minimum number of spaces that keys should be padded with for this block.
+        
+        Used to align keys during stringification.
+        """
+        max_indent=0
+        for key in d:
+            kl = len(key)
+            if kl>max_indent:
+                max_indent=kl
+        return max_indent+1
+        
     def stringify(self, indentation=True, inline=False, space="\t"):
         """Returns the data as a string, with optional formating.
 
@@ -76,8 +89,11 @@ class KeyValues(collections.MutableMapping):
         prefix_in = space * (indentation_level + 1)
 
         result = prefix + "{" + line_break
+        key_indent = self.get_indent_for_keys(self._children)
         for key in self._children:
+            key_prefix = ' '*(key_indent-len(key))
             value = self._children[key]
+            # Uncomment to spam types.
             #result += prefix_in + '// '+str(type(value)) + line_break
             result += prefix_in + self._escape(str(key))
             if type(value) is list:
@@ -89,12 +105,12 @@ class KeyValues(collections.MutableMapping):
                         result += line_break
                         result += value[i]._stringify_recursive(indentation, line_break, space, (indentation_level + 1))
                     else:
-                        result += ' {0}'.format(self._escape(str(value[i])))
+                        result += key_prefix+self._escape(str(value[i]))
             elif type(value) is KeyValues:
                 result += line_break
                 result += value._stringify_recursive(indentation, line_break, space, (indentation_level + 1))
             elif type(value) is str or type(value) is int or type(value) is float:
-                result += ' {0}'.format(self._escape(str(value)))
+                result += key_prefix+self._escape(str(value))
 
             result += line_break
 

@@ -1,20 +1,21 @@
-// mvm_SFshanghai
+// mvm_coaltown
+// 30wave 
 
 #base robot_giant.pop
 #base robot_standard.pop
 
 WaveSchedule
 {
-	StartingCurrency 400
-	RespawnWaveTime 5
+	StartingCurrency              400
+	RespawnWaveTime               5
 	CanBotsAttackWhileInSpawnRoom No
-	Advanced	1
+	Advanced                      1
 	
 	// MISSION: Sentry Buster
 	Mission
 	{
-		Objective DestroySentries
-		Where spawnbot
+		Objective    DestroySentries
+		Where        spawnbot
 		CooldownTime 30
 		TFBot
 		{

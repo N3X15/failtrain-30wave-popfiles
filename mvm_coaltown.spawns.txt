@@ -1,0 +1,3 @@
+spawnbot
+spawnbot_mission_sniper
+spawnbot_mission_spy

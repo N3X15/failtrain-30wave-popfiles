@@ -1,0 +1,6 @@
+spawnbot
+spawnbot_mission_sniper
+spawnbot_mission_spy
+spawnbot_right
+spawnbot_left
+spawnbot_lower

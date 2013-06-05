@@ -1,3 +1,10 @@
+// mvm_coaltown
+// 30wave
+//
+// By N3X15 and ice
+//
+// All the #base entries are now streamlined into the Templates entry.
+//
 WaveSchedule
 {
 	StartingCurrency              400
@@ -58,6 +65,232 @@ WaveSchedule
 				"ubercharge rate bonus" 5
 				"heal rate bonus"       0.1
 				"uber duration bonus"   -3
+			}
+		}
+		T_TFBot_Giant_Heavyweapons_Natascha
+		{
+			Class               Heavyweapons
+			Name                "Giant Heavy"
+			ClassIcon           heavy_giant
+			Item                Natascha
+			Skill               Expert
+			Health              5000
+			WeaponRestrictions  PrimaryOnly
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage bonus"                      1.5
+				"damage force reduction"            0.3
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set"       2
+			}
+		}
+		T_TFBot_Giant_Scout_Fast
+		{
+			Class               Scout
+			Name                "Super Scout"
+			ClassIcon           scout_giant_fast
+			Skill               Easy
+			Item                "Bonk Boy"
+			Item                "The Holy Mackerel"
+			Health              1200
+			WeaponRestrictions  MeleeOnly
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  2
+				"damage force reduction"            0.7
+				"airblast vulnerability multiplier" 0.7
+				"override footstep sound set"       5
+			}
+		}
+		T_TFBot_Giant_Heavyweapons_Deflector
+		{
+			Class               Heavyweapons
+			Name                "Giant Deflector Heavy"
+			ClassIcon           heavy_deflector
+			Skill               Expert
+			Health              5000
+			Item                "The U-clank-a"
+			Item                Deflector
+			WeaponRestrictions  PrimaryOnly
+			MaxVisionRange      1200
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage force reduction"            0.3
+				"airblast vulnerability multiplier" 0.3
+				"damage bonus"                      1.5
+				"attack projectiles"                1
+				"override footstep sound set"       2
+			}
+		}
+		T_TFBot_Giant_Pyro
+		{
+			Class               Pyro
+			Name                "Giant Pyro"
+			ClassIcon           pyro_giant
+			Skill               Expert
+			Health              3000
+			WeaponRestrictions  PrimaryOnly
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage force reduction"            0.6
+				"airblast vulnerability multiplier" 0.6
+				"override footstep sound set"       6
+			}
+		}
+		T_TFBot_Giant_Soldier_Crit
+		{
+			Class               Soldier
+			Name                "Giant Charged Soldier"
+			ClassIcon           soldier_crit
+			Skill               Normal
+			Health              3800
+			Item                "The Original"
+			Attributes          AlwaysCrit
+			Attributes          MiniBoss
+			WeaponRestrictions  PrimaryOnly
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"faster reload rate"                0.2
+				"Projectile speed increased"        0.5
+				"fire rate bonus"                   2
+				"damage force reduction"            0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set"       3
+			}
+		}
+		T_TFBot_Giant_Pyro_Flare_Spammer
+		{
+			Class               Pyro
+			Name                "Giant Flare Pyro"
+			ClassIcon           pyro_flare_giant
+			Skill               Expert
+			Health              3000
+			Item                "The detonator"
+			Item                "Old Guadalajara"
+			WeaponRestrictions  SecondaryOnly
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage force reduction"            0.6
+				"airblast vulnerability multiplier" 0.6
+				"override footstep sound set"       6
+				"Projectile speed increased"        1.0
+				"fire rate bonus"                   0.3
+			}
+		}
+		T_TFBot_Giant_Scout
+		{
+			Class               Scout
+			Name                "Giant Scout"
+			ClassIcon           scout_giant
+			Skill               Expert
+			Health              1600
+			WeaponRestrictions  PrimaryOnly
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"damage force reduction"            0.7
+				"airblast vulnerability multiplier" 0.7
+				"override footstep sound set"       5
+			}
+		}
+		T_TFBot_Giant_Medic
+		{
+			Class               Medic
+			Name                "Giant Medic"
+			ClassIcon           medic_giant
+			Skill               Expert
+			Health              4500
+			Attributes          SpawnWithFullCharge
+			Attributes          MiniBoss
+			Item                "The Quick-Fix"
+			WeaponRestrictions  SecondaryOnly
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage force reduction"            0.6
+				"airblast vulnerability multiplier" 0.6
+				"heal rate bonus"                   200
+			}
+		}
+		T_TFBot_Giant_Heavyweapons
+		{
+			Class               Heavyweapons
+			Name                "Giant Heavy"
+			ClassIcon           heavy_giant
+			Skill               Expert
+			Health              5000
+			WeaponRestrictions  PrimaryOnly
+			MaxVisionRange      1200
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage bonus"                      1.5
+				"damage force reduction"            0.3
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set"       2
+			}
+		}
+		T_TFBot_Medic_SlowRecharge
+		{
+			Class               Medic
+			Name                "Uber Medic"
+			ClassIcon           medic_uber
+			Skill               Normal
+			Attributes          SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"ubercharge rate bonus" 0.25
+				"heal rate bonus"       5
+			}
+		}
+		T_TFBot_Giant_Soldier_Spammer
+		{
+			Class               Soldier
+			Name                "Giant Rapid Fire Soldier"
+			ClassIcon           soldier_spammer
+			Health              3800
+			Skill               Expert
+			WeaponRestrictions  PrimaryOnly
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"Projectile speed increased"        0.65
+				"faster reload rate"                -0.8
+				"fire rate bonus"                   0.5
+				"damage force reduction"            0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set"       3
+			}
+		}
+		T_TFBot_Giant_Demo_RapidFire
+		{
+			Class               Demoman
+			Name                "Giant Rapid Fire Demoman"
+			ClassIcon           demo_giant
+			Health              3000
+			Skill               Expert
+			WeaponRestrictions  PrimaryOnly
+			Attributes          HoldFireUntilFullReload
+			Attributes          MiniBoss
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"fire rate bonus"                   0.5
+				"damage force reduction"            0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set"       4
 			}
 		}
 	}
@@ -550,10 +783,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -664,9 +894,6 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Heavyweapons_Natascha
-					Class               Heavyweapons
-					Name                "Giant Heavy"
-					ClassIcon           heavy_giant
 					Skill               Easy
 					Health              10000
 					Item                "Warrior's Spirit"
@@ -1044,10 +1271,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -1196,8 +1420,6 @@ WaveSchedule
 			TFBot
 			{
 				Template            T_TFBot_Giant_Scout
-				Class               Scout
-				Name                "Giant Scout"
 				Skill               Easy
 				Health              3000
 				WeaponRestrictions  MeleeOnly
@@ -1593,10 +1815,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -2254,10 +2473,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -3035,10 +3251,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -3893,10 +4106,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -4158,16 +4368,11 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Heavyweapons
-					Class               Heavyweapons
-					Name                "Giant Heavy"
-					ClassIcon           heavy_giant
 					Skill               Easy
-					Health              5000
 					Item                "Warrior's Spirit"
 					Item                "Big Chief"
 					Item                "The All-Father"
 					WeaponRestrictions  MeleeOnly
-					MaxVisionRange      1200
 					CharacterAttributes
 					{
 						"move speed bonus"                  0.5
@@ -4218,22 +4423,8 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template            T_TFBot_Giant_Scout_Fast
-				Class               Scout
-				Name                "Super Scout"
-				ClassIcon           scout_giant_fast
-				Skill               Easy
-				Item                "Bonk Boy"
-				Item                "The Holy Mackerel"
-				Health              1500
-				WeaponRestrictions  MeleeOnly
-				CharacterAttributes
-				{
-					"move speed bonus"                  2
-					"damage force reduction"            0.7
-					"airblast vulnerability multiplier" 0.7
-					"override footstep sound set"       5
-				}
+				Template T_TFBot_Giant_Scout_Fast
+				Health   1500
 			}
 		}
 		WaveSpawn
@@ -4247,25 +4438,9 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template            T_TFBot_Giant_Soldier_Crit
-				Class               Soldier
-				Name                "Giant Charged Soldier"
-				ClassIcon           soldier_crit
-				Skill               Normal
-				Health              3000
-				Item                "The Original"
-				Attributes          AlwaysCrit
-				WeaponRestrictions  PrimaryOnly
-				CharacterAttributes
-				{
-					"move speed bonus"                  0.5
-					"faster reload rate"                0.2
-					"Projectile speed increased"        0.5
-					"fire rate bonus"                   2
-					"damage force reduction"            0.4
-					"airblast vulnerability multiplier" 0.4
-					"override footstep sound set"       3
-				}
+				Template   T_TFBot_Giant_Soldier_Crit
+				Health     3000
+				Attributes AlwaysCrit
 			}
 		}
 		WaveSpawn
@@ -4279,23 +4454,8 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template            T_TFBot_Giant_Soldier_Spammer
-				Class               Soldier
-				Name                "Giant Rapid Fire Soldier"
-				ClassIcon           soldier_spammer
-				Health              3000
-				Skill               Expert
-				WeaponRestrictions  PrimaryOnly
-				CharacterAttributes
-				{
-					"move speed bonus"                  0.5
-					"Projectile speed increased"        0.65
-					"faster reload rate"                -0.8
-					"fire rate bonus"                   0.5
-					"damage force reduction"            0.4
-					"airblast vulnerability multiplier" 0.4
-					"override footstep sound set"       3
-				}
+				Template T_TFBot_Giant_Soldier_Spammer
+				Health   3000
 			}
 		}
 		WaveSpawn
@@ -4309,24 +4469,8 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template            T_TFBot_Giant_Pyro_Flare_Spammer
-				Class               Pyro
-				Name                "Giant Flare Pyro"
-				ClassIcon           pyro_giant
-				Skill               Expert
-				Health              3000
-				Item                "The detonator"
-				Item                "Old Guadalajara"
-				WeaponRestrictions  SecondaryOnly
-				CharacterAttributes
-				{
-					"move speed bonus"                  0.5
-					"damage force reduction"            0.6
-					"airblast vulnerability multiplier" 0.6
-					"override footstep sound set"       6
-					"Projectile speed increased"        1.0
-					"fire rate bonus"                   0.3
-				}
+				Template  T_TFBot_Giant_Pyro_Flare_Spammer
+				ClassIcon pyro_giant
 			}
 		}
 		WaveSpawn
@@ -4340,20 +4484,7 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template            T_TFBot_Giant_Pyro
-				Class               Pyro
-				Name                "Giant Pyro"
-				ClassIcon           pyro_giant
-				Skill               Expert
-				Health              3000
-				WeaponRestrictions  PrimaryOnly
-				CharacterAttributes
-				{
-					"move speed bonus"                  0.5
-					"damage force reduction"            0.6
-					"airblast vulnerability multiplier" 0.6
-					"override footstep sound set"       6
-				}
+				Template T_TFBot_Giant_Pyro
 			}
 		}
 		WaveSpawn
@@ -4368,12 +4499,6 @@ WaveSchedule
 			TFBot
 			{
 				Template            T_TFBot_Giant_Demo_RapidFire
-				Class               Demoman
-				Name                "Giant Rapid Fire Demoman"
-				ClassIcon           demo_giant
-				Skill               Expert
-				Health              3000
-				WeaponRestrictions  PrimaryOnly
 				Attributes          HoldFireUntilFullReload
 				CharacterAttributes
 				{
@@ -4397,22 +4522,9 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template            T_TFBot_Giant_Heavyweapons_Natascha
-				Class               Heavyweapons
-				Name                "Giant Heavy"
-				ClassIcon           heavy_giant
-				Skill               Expert
-				Health              4000
-				WeaponRestrictions  PrimaryOnly
-				MaxVisionRange      1200
-				CharacterAttributes
-				{
-					"move speed bonus"                  0.5
-					"damage bonus"                      1.5
-					"damage force reduction"            0.3
-					"airblast vulnerability multiplier" 0.3
-					"override footstep sound set"       2
-				}
+				Template       T_TFBot_Giant_Heavyweapons_Natascha
+				Health         4000
+				MaxVisionRange 1200
 			}
 		}
 		WaveSpawn
@@ -4426,25 +4538,8 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template            T_TFBot_Giant_Heavyweapons_Deflector
-				Class               Heavyweapons
-				Name                "Giant Deflector Heavy"
-				ClassIcon           heavy_deflector
-				Skill               Expert
-				Health              4000
-				Item                "The U-clank-a"
-				Item                Deflector
-				WeaponRestrictions  PrimaryOnly
-				MaxVisionRange      1200
-				CharacterAttributes
-				{
-					"move speed bonus"                  0.5
-					"damage force reduction"            0.3
-					"airblast vulnerability multiplier" 0.3
-					"damage bonus"                      1.5
-					"attack projectiles"                1
-					"override footstep sound set"       2
-				}
+				Template T_TFBot_Giant_Heavyweapons_Deflector
+				Health   4000
 			}
 		}
 	}
@@ -5123,10 +5218,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -6199,10 +6291,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -6702,21 +6791,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Scout_Fast
-					Class               Scout
-					Name                "Super Scout"
-					Skill               Easy
-					Item                "Bonk Boy"
-					Item                "The Holy Mackerel"
-					Health              1500
-					WeaponRestrictions  MeleeOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  2
-						"damage force reduction"            0.7
-						"airblast vulnerability multiplier" 0.7
-						"override footstep sound set"       5
-					}
+					Template T_TFBot_Giant_Scout_Fast
+					Health   1500
 				}
 			}
 		}
@@ -6850,19 +6926,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Pyro
-					Class               Pyro
-					Name                "Giant Pyro"
-					Skill               Expert
-					Health              3000
-					WeaponRestrictions  PrimaryOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"damage force reduction"            0.6
-						"airblast vulnerability multiplier" 0.6
-						"override footstep sound set"       6
-					}
+					Template T_TFBot_Giant_Pyro
 				}
 			}
 		}
@@ -7018,11 +7082,6 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Demo_RapidFire
-					Class               Demoman
-					Name                "Giant Rapid Fire Demoman"
-					Skill               Expert
-					Health              3000
-					WeaponRestrictions  PrimaryOnly
 					Attributes          HoldFireUntilFullReload
 					CharacterAttributes
 					{
@@ -7160,24 +7219,9 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Soldier_Crit
-					Class               Soldier
-					Name                "Giant Charged Soldier"
-					Skill               Normal
-					Health              3000
-					Item                "The Original"
-					Attributes          AlwaysCrit
-					WeaponRestrictions  PrimaryOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"faster reload rate"                0.2
-						"Projectile speed increased"        0.5
-						"fire rate bonus"                   2
-						"damage force reduction"            0.4
-						"airblast vulnerability multiplier" 0.4
-						"override footstep sound set"       3
-					}
+					Template   T_TFBot_Giant_Soldier_Crit
+					Health     3000
+					Attributes AlwaysCrit
 				}
 			}
 		}
@@ -7326,21 +7370,9 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Heavyweapons_Natascha
-					Class               Heavyweapons
-					Name                "Giant Heavy"
-					Skill               Expert
-					Health              4000
-					WeaponRestrictions  PrimaryOnly
-					MaxVisionRange      1200
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"damage bonus"                      1.5
-						"damage force reduction"            0.3
-						"airblast vulnerability multiplier" 0.3
-						"override footstep sound set"       2
-					}
+					Template       T_TFBot_Giant_Heavyweapons_Natascha
+					Health         4000
+					MaxVisionRange 1200
 				}
 			}
 		}
@@ -7368,10 +7400,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -7440,12 +7469,9 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Medic
-					Class               Medic
 					Skill               Easy
-					Name                "Giant Medic"
 					Health              2000
 					Attributes          SpawnWithFullCharge
-					WeaponRestrictions  SecondaryOnly
 					Scale               2.0
 					CharacterAttributes
 					{
@@ -7906,21 +7932,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Scout_Fast
-					Class               Scout
-					Name                "Super Scout"
-					Skill               Easy
-					Item                "Bonk Boy"
-					Item                "The Holy Mackerel"
-					Health              1500
-					WeaponRestrictions  MeleeOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  2
-						"damage force reduction"            0.7
-						"airblast vulnerability multiplier" 0.7
-						"override footstep sound set"       5
-					}
+					Template T_TFBot_Giant_Scout_Fast
+					Health   1500
 				}
 			}
 		}
@@ -8054,19 +8067,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Pyro
-					Class               Pyro
-					Name                "Giant Pyro"
-					Skill               Expert
-					Health              3000
-					WeaponRestrictions  PrimaryOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"damage force reduction"            0.6
-						"airblast vulnerability multiplier" 0.6
-						"override footstep sound set"       6
-					}
+					Template T_TFBot_Giant_Pyro
 				}
 				TFBot
 				{
@@ -8236,11 +8237,6 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Demo_RapidFire
-					Class               Demoman
-					Name                "Giant Rapid Fire Demoman"
-					Skill               Expert
-					Health              3000
-					WeaponRestrictions  PrimaryOnly
 					Attributes          HoldFireUntilFullReload
 					CharacterAttributes
 					{
@@ -8378,24 +8374,9 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Soldier_Crit
-					Class               Soldier
-					Name                "Giant Charged Soldier"
-					Skill               Normal
-					Health              3000
-					Item                "The Original"
-					Attributes          AlwaysCrit
-					WeaponRestrictions  PrimaryOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"faster reload rate"                0.2
-						"Projectile speed increased"        0.5
-						"fire rate bonus"                   2
-						"damage force reduction"            0.4
-						"airblast vulnerability multiplier" 0.4
-						"override footstep sound set"       3
-					}
+					Template   T_TFBot_Giant_Soldier_Crit
+					Health     3000
+					Attributes AlwaysCrit
 				}
 				TFBot
 				{
@@ -8557,21 +8538,9 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Heavyweapons_Natascha
-					Class               Heavyweapons
-					Name                "Giant Heavy"
-					Skill               Expert
-					Health              4000
-					WeaponRestrictions  PrimaryOnly
-					MaxVisionRange      1200
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"damage bonus"                      1.5
-						"damage force reduction"            0.3
-						"airblast vulnerability multiplier" 0.3
-						"override footstep sound set"       2
-					}
+					Template       T_TFBot_Giant_Heavyweapons_Natascha
+					Health         4000
+					MaxVisionRange 1200
 				}
 			}
 		}
@@ -8599,10 +8568,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -8671,12 +8637,9 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Medic
-					Class               Medic
 					Skill               Easy
-					Name                "Giant Medic"
 					Health              2000
 					Attributes          SpawnWithFullCharge
-					WeaponRestrictions  SecondaryOnly
 					Scale               2.0
 					CharacterAttributes
 					{
@@ -9121,21 +9084,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Scout_Fast
-					Class               Scout
-					Name                "Super Scout"
-					Skill               Easy
-					Item                "Bonk Boy"
-					Item                "The Holy Mackerel"
-					Health              1500
-					WeaponRestrictions  MeleeOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  2
-						"damage force reduction"            0.7
-						"airblast vulnerability multiplier" 0.7
-						"override footstep sound set"       5
-					}
+					Template T_TFBot_Giant_Scout_Fast
+					Health   1500
 				}
 			}
 		}
@@ -9576,10 +9526,7 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Medic_SlowRecharge
-					Class               Medic
 					Skill               Easy
-					Name                "Uber Medic"
-					Attributes          SpawnWithFullCharge
 					WeaponRestrictions  SecondaryOnly
 					CharacterAttributes
 					{
@@ -9648,12 +9595,9 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Medic
-					Class               Medic
 					Skill               Easy
-					Name                "Giant Medic"
 					Health              2000
 					Attributes          SpawnWithFullCharge
-					WeaponRestrictions  SecondaryOnly
 					Scale               2.0
 					CharacterAttributes
 					{
@@ -9912,19 +9856,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Pyro
-					Class               Pyro
-					Name                "Giant Pyro"
-					Skill               Expert
-					Health              3000
-					WeaponRestrictions  PrimaryOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"damage force reduction"            0.6
-						"airblast vulnerability multiplier" 0.6
-						"override footstep sound set"       6
-					}
+					Template T_TFBot_Giant_Pyro
 				}
 				TFBot
 				{
@@ -10103,21 +10035,9 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Heavyweapons_Natascha
-					Class               Heavyweapons
-					Name                "Giant Heavy"
-					Skill               Expert
-					Health              4000
-					WeaponRestrictions  PrimaryOnly
-					MaxVisionRange      1200
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"damage bonus"                      1.5
-						"damage force reduction"            0.3
-						"airblast vulnerability multiplier" 0.3
-						"override footstep sound set"       2
-					}
+					Template       T_TFBot_Giant_Heavyweapons_Natascha
+					Health         4000
+					MaxVisionRange 1200
 				}
 			}
 		}
@@ -10289,11 +10209,6 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Demo_RapidFire
-					Class               Demoman
-					Name                "Giant Rapid Fire Demoman"
-					Skill               Expert
-					Health              3000
-					WeaponRestrictions  PrimaryOnly
 					Attributes          HoldFireUntilFullReload
 					CharacterAttributes
 					{
@@ -10447,24 +10362,9 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template            T_TFBot_Giant_Soldier_Crit
-					Class               Soldier
-					Name                "Giant Charged Soldier"
-					Skill               Normal
-					Health              3000
-					Item                "The Original"
-					Attributes          AlwaysCrit
-					WeaponRestrictions  PrimaryOnly
-					CharacterAttributes
-					{
-						"move speed bonus"                  0.5
-						"faster reload rate"                0.2
-						"Projectile speed increased"        0.5
-						"fire rate bonus"                   2
-						"damage force reduction"            0.4
-						"airblast vulnerability multiplier" 0.4
-						"override footstep sound set"       3
-					}
+					Template   T_TFBot_Giant_Soldier_Crit
+					Health     3000
+					Attributes AlwaysCrit
 				}
 				TFBot
 				{

@@ -49,6 +49,13 @@ def exportPopfile(kv,file):
 	kv.save(file)
 	log.info("Saved {0} templates to {1} ({2} skipped).".format(len(kv['Templates']),file,len(skipped)))
 
+def checkForValueDuplication(current,template,file,cwd):
+	for key in current:
+		if key in template and template[key]==current[key]:
+			del(current[key])
+			log.warning('{0} > {1}:  Node duplicates value {2}, removing.'.format(file,cwd,repr(template[key])))
+	return current
+
 def scanForInvalidTemplates(kv,file,path):
 	if type(kv) is list:
 		for i in range(len(kv)):
@@ -57,15 +64,17 @@ def scanForInvalidTemplates(kv,file,path):
 			cwdp[-1]=path[-1]+'[{0}]'.format(i)
 			cwd = '/'.join(cwdp)
 			#print(cwd)
-			print((' '*(len(cwdp)+1))+' [{0}] = {1}'.format(i,type(value)))
+			#print((' '*(len(cwdp)+1))+' [{0}] = {1}'.format(i,type(value)))
 			if type(value) is list or type(value) is KeyValues:
 				kv[i]=scanForInvalidTemplates(value,file,cwdp)
 				continue
 		return kv
 	for key in kv:
+		if key not in kv:
+			continue
 		value=kv[key]
 		cwdp = path+[key]
-		print((' '*len(cwdp))+' {0} = {1}'.format(key,type(value)))
+		#print((' '*len(cwdp))+' {0} = {1}'.format(key,type(value)))
 		cwd = '/'.join(cwdp)
 		if type(value) is list or type(value) is KeyValues:
 			kv[key]=scanForInvalidTemplates(value,file,cwdp)
@@ -81,13 +90,19 @@ def scanForInvalidTemplates(kv,file,path):
 				template_uses[value]=1
 			else:
 				template_uses[value]+=1
+			# Check to see if values match parent
+			kv=checkForValueDuplication(kv,templates[value],file,cwd)
+			
 		if cwdp[-2].split('[')[0] == 'TFBot':
 			if key == 'Name':
 				if value in name2template:
 					if type(name2template[value]) is not list:
-						log.warning('{0} > {1}:  TFBot named "{2}" might need a Template "{3}"!'.format(file,cwd,value,name2template[value]))
+						log.warning('{0} > {1}:  TFBot named "{2}" might needs Template "{3}"! This has automatically been done for you.'.format(file,cwd,value,name2template[value]))
 						kv['Template']=name2template[value]
 						kv._children.move_to_end('Template',last=False)
+						
+						# Check to see if values match parent
+						kv=checkForValueDuplication(kv,templates[name2template[value]],file,cwd)
 					else:
 						log.warning('{0} > {1}:  TFBot named "{2}" might need a Template from any of the following examples:'.format(file,cwd,value))
 						for tplID in name2template[value]:

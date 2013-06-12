@@ -184,6 +184,19 @@ def scanForInvalidTemplates(kv,file,path):
 		cwd = '/'.join(cwdp)
 		if type(value) is list or type(value) is KeyValues:
 			kv[key]=scanForInvalidTemplates(value,file,cwdp)
+			if type(value) is list:
+				if key == 'Wave':
+					#print(repr(value))
+					for i in range(len(value)):
+						kv.set_comment_list(key,i,'Wave {0}'.format(i+1),1)
+				if key == 'WaveSpawn' and cwdp[-2].split('[')[0] == 'Wave':
+					parentWaveNumber = cwdp[-2].split('[')[1].strip(']')
+					parentWaveNumber = int(parentWaveNumber)
+					if type(value) is list:
+						for i in range(len(value)):
+							kv.set_comment_list(key,i,'Wave {0}.{1}'.format(parentWaveNumber+1,i+1),1)
+					elif type(value) is KeyValues:
+						kv.set_comment(key,'Wave {0}.{1}'.format(parentWaveNumber+1,1),1)
 			continue
 		if key == 'Template':
 			if value not in templates:

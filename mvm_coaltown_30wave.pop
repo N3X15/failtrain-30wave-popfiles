@@ -1454,7 +1454,7 @@ WaveSchedule
 			Template T_OPT_TFBot_Sydney_Sleeper_Sniper
 		}
 	}
-	Wave
+	Wave // Wave 1
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -1469,7 +1469,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.1
 		{
 			Where              spawnbot
 			TotalCount         30
@@ -1489,7 +1489,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.2
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -1509,7 +1509,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.3
 		{
 			Where              spawnbot
 			TotalCount         15
@@ -1529,7 +1529,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.4
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -1549,7 +1549,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.5
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -1569,7 +1569,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.6
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -1589,7 +1589,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.7
 		{
 			Where              spawnbot
 			TotalCount         20
@@ -1609,7 +1609,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 1.8
 		{
 			Where              spawnbot
 			TotalCount         5
@@ -1630,7 +1630,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 2
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -1645,7 +1645,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.1
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -1672,7 +1672,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.2
 		{
 			Where              spawnbot
 			TotalCount         15
@@ -1699,7 +1699,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.3
 		{
 			Where              spawnbot
 			TotalCount         20
@@ -1726,7 +1726,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.4
 		{
 			Where              spawnbot
 			TotalCount         15
@@ -1753,7 +1753,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.5
 		{
 			Where              spawnbot
 			TotalCount         15
@@ -1784,7 +1784,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.6
 		{
 			Where              spawnbot
 			TotalCount         15
@@ -1817,7 +1817,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.7
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -1844,7 +1844,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.8
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -1872,7 +1872,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 3
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -1887,7 +1887,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn // N3X15: Made a Squad, added 5 medics
+		WaveSpawn // Wave 3.1 - N3X15: Made a Squad, added 5 medics
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -1935,8 +1935,7 @@ WaveSchedule
 				}
 			}
 		}
-		// N3X15: Added support wave.
-		WaveSpawn
+		WaveSpawn // Wave 3.2 - N3X15: Added support wave.
 		{
 			Where             spawnbot
 			Support           1
@@ -1950,7 +1949,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 4
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -1965,7 +1964,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.1
 		{
 			TotalCurrency      500
 			TotalCount         1
@@ -1984,7 +1983,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.2
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -2015,7 +2014,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.3
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -2046,7 +2045,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.4
 		{
 			Where              spawnbot
 			TotalCount         30
@@ -2077,7 +2076,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.5
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -2108,7 +2107,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.6
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -2143,7 +2142,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.7
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -2180,7 +2179,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.8
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -2211,7 +2210,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 4.9
 		{
 			Where              spawnbot
 			TotalCount         15
@@ -2243,7 +2242,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 5
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -2286,7 +2285,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 6
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -2301,7 +2300,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.1
 		{
 			Where              spawnbot
 			TotalCount         55
@@ -2336,7 +2335,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.2
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -2371,7 +2370,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.3
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -2406,7 +2405,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.4
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -2441,7 +2440,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.5
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -2480,7 +2479,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.6
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -2521,7 +2520,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.7
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -2556,7 +2555,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 6.8
 		{
 			Where              spawnbot
 			TotalCount         20
@@ -2592,7 +2591,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 7
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -2607,7 +2606,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.1
 		{
 			TotalCurrency      500
 			TotalCount         1
@@ -2626,7 +2625,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.2
 		{
 			TotalCurrency      200
 			TotalCount         1
@@ -2644,7 +2643,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.3
 		{
 			Where              spawnbot
 			TotalCount         70
@@ -2687,7 +2686,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.4
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -2726,7 +2725,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.5
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -2765,7 +2764,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.6
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -2800,7 +2799,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.7
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -2843,7 +2842,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.8
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -2888,7 +2887,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.9
 		{
 			Where              spawnbot
 			TotalCount         60
@@ -2927,7 +2926,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 7.10
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -2967,7 +2966,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 8
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -2997,7 +2996,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 9
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -3012,7 +3011,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.1
 		{
 			Where              spawnbot
 			TotalCount         70
@@ -3059,7 +3058,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.2
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -3102,7 +3101,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.3
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -3149,7 +3148,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.4
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -3188,7 +3187,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.5
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -3235,7 +3234,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.6
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -3284,7 +3283,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.7
 		{
 			Where              spawnbot
 			TotalCount         60
@@ -3327,7 +3326,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 9.8
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -3371,7 +3370,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 10
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -3386,7 +3385,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.1
 		{
 			Where              spawnbot
 			TotalCount         70
@@ -3450,7 +3449,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.2
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -3497,7 +3496,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.3
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -3548,7 +3547,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.4
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -3591,7 +3590,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.5
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -3642,7 +3641,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.6
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -3695,7 +3694,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.7
 		{
 			Where              spawnbot
 			TotalCount         60
@@ -3738,7 +3737,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.8
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -3781,7 +3780,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 10.9
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -3820,7 +3819,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 11
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -3835,7 +3834,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.1
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3850,7 +3849,7 @@ WaveSchedule
 				Health   1500
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3866,7 +3865,7 @@ WaveSchedule
 				Attributes AlwaysCrit
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.3
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3881,7 +3880,7 @@ WaveSchedule
 				Health   3000
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.4
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3896,7 +3895,7 @@ WaveSchedule
 				ClassIcon pyro_giant
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.5
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3910,7 +3909,7 @@ WaveSchedule
 				Template T_TFBot_Giant_Pyro
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.6
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3930,7 +3929,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.7
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3946,7 +3945,7 @@ WaveSchedule
 				MaxVisionRange 1200
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 11.8
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -3962,7 +3961,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 12
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -3977,7 +3976,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.1
 		{
 			Where              spawnbot
 			TotalCount         70
@@ -4045,7 +4044,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.2
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -4096,7 +4095,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.3
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -4151,7 +4150,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.4
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -4198,7 +4197,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.5
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -4253,7 +4252,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.6
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -4306,7 +4305,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.7
 		{
 			Where              spawnbot
 			TotalCount         60
@@ -4349,7 +4348,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 12.8
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -4393,7 +4392,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 13
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -4408,7 +4407,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 13.1
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -4431,7 +4430,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 13.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -4449,7 +4448,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 14
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -4464,7 +4463,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.1
 		{
 			Where              spawnbot
 			TotalCount         70
@@ -4536,7 +4535,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.2
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -4595,7 +4594,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.3
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -4654,7 +4653,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.4
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -4705,7 +4704,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.5
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -4764,7 +4763,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.6
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -4817,7 +4816,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.7
 		{
 			Where              spawnbot
 			TotalCount         60
@@ -4864,7 +4863,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 14.8
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -4916,7 +4915,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 15
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -4931,7 +4930,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 15.1
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -4954,7 +4953,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 15.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -4972,7 +4971,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 16
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -4987,7 +4986,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.1
 		{
 			Where              spawnbot
 			TotalCount         70
@@ -5064,7 +5063,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.2
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -5127,7 +5126,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.3
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -5196,7 +5195,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.4
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -5253,7 +5252,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.5
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -5318,7 +5317,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.6
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -5388,7 +5387,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.7
 		{
 			Where              spawnbot
 			TotalCount         60
@@ -5435,7 +5434,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 16.8
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -5487,7 +5486,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 17
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -5502,7 +5501,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 17.1
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -5522,7 +5521,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 17.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -5537,7 +5536,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 18
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -5552,7 +5551,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.1
 		{
 			TotalCurrency      500
 			TotalCount         1
@@ -5572,7 +5571,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.2
 		{
 			Where              spawnbot
 			TotalCount         70
@@ -5649,7 +5648,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.3
 		{
 			Where              spawnbot
 			TotalCount         45
@@ -5716,7 +5715,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.4
 		{
 			Where              spawnbot
 			TotalCount         40
@@ -5789,7 +5788,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.5
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -5854,7 +5853,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.6
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -5919,7 +5918,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.7
 		{
 			Where              spawnbot
 			TotalCount         35
@@ -5989,7 +5988,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.8
 		{
 			Where              spawnbot
 			TotalCount         60
@@ -6040,7 +6039,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 18.9
 		{
 			Where              spawnbot
 			TotalCount         25
@@ -6096,7 +6095,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 19
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6129,7 +6128,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 20
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6222,7 +6221,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 21
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6237,7 +6236,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 21.1
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -6260,7 +6259,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 21.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -6278,7 +6277,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 22
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6345,7 +6344,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 23
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6360,7 +6359,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 23.1
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -6383,7 +6382,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 23.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -6401,7 +6400,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 24
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6472,7 +6471,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 25
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6558,7 +6557,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 26
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6573,7 +6572,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 26.1
 		{
 			Where              spawnbot
 			TotalCount         10
@@ -6596,7 +6595,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 26.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -6613,7 +6612,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 26.3
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -6638,7 +6637,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 27
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6721,7 +6720,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 28
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6802,7 +6801,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 29
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6891,7 +6890,7 @@ WaveSchedule
 			}
 		}
 	}
-	Wave
+	Wave // Wave 30
 	{
 		WaitWhenDone    60
 		Sound           Announcer.IncomingMob
@@ -6906,7 +6905,7 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 30.1
 		{
 			Where              spawnbot
 			TotalCount         500
@@ -6971,7 +6970,7 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn
+		WaveSpawn // Wave 30.2
 		{
 			Where              spawnbot
 			TotalCount         1

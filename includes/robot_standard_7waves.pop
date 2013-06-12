@@ -1,0 +1,506 @@
+WaveSchedule
+{
+	Templates
+	{
+		// Sniper
+		T_TFBot_Sniper
+		{
+			Class Sniper
+			Skill Hard
+			MaxVisionRange 2500
+		}
+		
+		T_TFBot_Sniper_Razorback
+		{
+			Class Sniper
+			Name "Razorback Sniper"
+			Skill Hard
+			Item "The Razorback"
+			MaxVisionRange 2500
+		}
+
+		T_TFBot_Sniper_Sydney_Sleeper
+		{
+			Class Sniper
+			Name "Sydney Sniper"
+			Skill Hard
+			ClassIcon sniper_sydneysleeper
+			Item "The Sydney Sleeper"
+			MaxVisionRange 3000
+		}
+		
+		// No Anim - NO NOT USE
+		T_TFBot_Sniper_Jarate
+		{
+			Class Sniper
+			Name "Jarate Master"
+			Skill Easy
+			ClassIcon sniper_jarate
+			Item "Jarate"
+			// Item "Master's Yellow Belt" // doesn't appear on robot models
+			Item "Desert Marauder"
+			WeaponRestrictions SecondaryOnly
+			CharacterAttributes
+			{
+				"effect bar recharge rate increased" 0.1
+			}
+		}
+		
+		T_TFBot_Sniper_Huntsman
+		{
+			Class Sniper
+			Name "Bowman"
+			Skill Hard
+			ClassIcon sniper_bow
+			WeaponRestrictions PrimaryOnly
+			Item "The Huntsman"
+			
+			CharacterAttributes 
+			{
+				"damage bonus" 0.5	
+			}
+		}
+		
+		// Scout
+		T_TFBot_Scout_Melee
+		{
+			Class Scout
+			Skill Hard // increased to improve ability to hit with melee
+			BehaviorModifiers Mobber
+			WeaponRestrictions MeleeOnly
+		}
+
+		T_TFBot_Scout_Fish
+		{
+			Class Scout
+			Skill Easy
+			WeaponRestrictions MeleeOnly
+			Item "The Holy Mackerel"
+		}
+
+		T_TFBot_Scout_Bonk
+		{
+			Class Scout
+			Skill Hard
+			Item "Bonk! Atomic Punch"
+			WeaponRestrictions MeleeOnly
+		}
+
+		T_TFBot_Scout_Sandman
+		{
+			Class Scout
+			Name "Minor League Scout"
+			Skill Hard
+			ClassIcon scout_stun
+			WeaponRestrictions MeleeOnly
+			Item "The Sandman"
+			Item "Batter's Helmet"
+		}
+
+		T_TFBot_Scout_Wrap_Assassin
+		{
+			Class Scout
+			Name "Wrap Assassin"
+			Skill Easy
+			WeaponRestrictions MeleeOnly
+					
+			Item "The Wrap Assassin"
+		}
+		
+		// Spy
+		T_TFBot_Spy
+		{
+			Class Spy
+			Skill Expert
+			Item "The Stealth Steeler"
+		}
+		T_TFBot_Sap_Spy
+		{
+			Class Spy
+			Skill Hard
+			Name "How does I secret agent man"
+			WeaponRestrictions SecondaryOnly
+			Item "The Red-Tape Recorder"
+		}
+		T_TFBot_Minion_Spy
+		{	
+				Name "Minion Spy"
+				Health 60
+				Class Spy
+				Skill Expert
+				MaxVisionRange 4000
+				Attributes Agressive
+				BehaviorModifiers Mobber
+				Item "The Dead Ringer"
+				Item "The Enforcer"
+				Item "Conniver's Kunai"
+				Item "Charmer's Chapeau"
+				Item "Rogue's Col Roule"
+				CharacterAttributes
+				{
+					"overheal decay disabled" 1
+					"set cloak is feign death" 1
+					"move speed bonus" 110
+				}
+		}
+		T_TFBot_King_Spy
+		{	
+				Name "King Spy"
+				Health 600
+				Class Spy
+				Skill Expert
+				Scale 0.1
+				MaxVisionRange 4000
+				Attributes Aggressive
+				Item "The Dead Ringer"
+				Item "The Enforcer"
+				Item "Conniver's Kunai"
+				Item "Charmer's Chapeau"
+				Item "Rogue's Col Roule"
+				CharacterAttributes
+				{	
+					"damage bonus" 1.5
+					"overheal decay disabled" 1
+					"set cloak is feign death" 1
+					"move speed bonus" 510
+				}
+		}
+		
+		// Medic
+		T_TFBot_Medic
+		{
+			Class Medic
+			Name "Uber Medic"
+			ClassIcon medic_uber
+			Skill Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"ubercharge rate bonus" 2
+				"heal rate bonus" 5
+			}
+		}
+		
+		T_TFBot_Medic_QuickUber
+		{
+			Class Medic
+			Name "Uber Medic"
+			ClassIcon medic_uber
+			Skill Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"ubercharge rate bonus" 5
+				"heal rate bonus" 0.1
+				"uber duration bonus" -3
+			}
+		}
+		
+		T_TFBot_Medic_BigHeal
+		{
+			Class Medic
+			Name "Quick-Fix Medic"
+			Skill Normal
+			Item "The Quick-Fix"
+			CharacterAttributes
+			{
+				"ubercharge rate bonus" 0.1
+				"heal rate bonus" 10
+			}
+		}
+
+		T_TFBot_Medic_QuickFix
+		{
+			Class Medic
+			Name "Quick-Fix Medic"
+			Skill Easy
+			Item "The Quick-Fix"
+			WeaponRestrictions SecondaryOnly
+		}
+		
+		T_TFBot_Medic_SlowRecharge
+		{
+			Class Medic
+			Name "Uber Medic"
+			ClassIcon medic_uber
+			Skill Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"ubercharge rate bonus" 0.25
+				"heal rate bonus" 5
+			}
+		}
+		
+		// Heavyweapons
+		T_TFBot_Heavyweapons_Fist
+		{
+			Class Heavyweapons
+			Name "Steel Gauntlet"
+			Skill Hard
+			ClassIcon heavy_steelfist
+			//Attributes DefensiveBuffHigh	// Passive damage reduction, replaces high health
+			Health 900
+			Scale 1.5						// Force scale to 1 when "Health" set high
+			WeaponRestrictions MeleeOnly
+			Item "Fists of Steel"
+		}
+
+		T_TFBot_Heavyweapons_Heavyweight_Champ
+		{
+			Class Heavyweapons
+			Name "Heavyweight Champ"
+			Skill Easy
+			ClassIcon heavy_champ
+			WeaponRestrictions MeleeOnly
+			Item "the killing gloves of boxing"
+			Item "Pugilist's Protector"
+		}
+		T_TFBot_Heavyweapons_Rock
+		{
+			Class Heavyweapons
+			Name "Rock 'em Sock 'em"
+			Skill Expert
+			Health 150
+			Scale 0.4
+			WeaponRestrictions MeleeOnly
+			Item "The Eviction Notice"
+			Item "Pugilist's Protector"
+			Attributes AlwaysCrit
+			CharacterAttributes
+			{
+				"dmg taken from crit reduced" 0.1
+			}
+		}
+		T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
+		{
+			Class Heavyweapons
+			Name "Heavyweight Champ"
+			Skill Easy
+			ClassIcon heavy_gru
+			WeaponRestrictions MeleeOnly
+			Item "Gloves of Running Urgently"
+		}
+		T_TFBot_Heavyweapons_Bear
+		{
+			Class Heavyweapons
+			Name "Bear Hands"
+			Skill Expert
+			ClassIcon heavy_champ
+			WeaponRestrictions SecondaryOnly
+			Item "The Brass Beast"
+			Item "The Buffalo Steak Sandvich"
+			Item "Warrior's Spirit"
+			CharacterAttributes
+			{
+				"dmg taken from crit reduced" 0.7
+				"lunchbox adds minicrits" 2
+			}
+		T_TFBot_Heavyweapons_Gnome
+		{
+			Class Heavyweapons
+			Name "Heavy Mittens"
+			Skill Easy
+			ClassIcon heavy_mittens
+			Scale 0.65
+			WeaponRestrictions MeleeOnly
+			Health 60
+			Attributes AlwaysCrit
+			Item "The All-Father"
+			Item "Point and Shoot"
+			Item "The Holiday Punch"
+			CharacterAttributes 
+			{
+				"move speed bonus"	1.3
+				"damage bonus" 0.2	
+			}
+		}
+
+		// Demoman
+		T_TFBot_Demoman
+		{
+			Class Demoman
+			Skill Easy
+		}
+		
+		T_TFBot_Demoman_Knight
+		{
+			Class Demoman
+			Name "Demoknight"
+			ClassIcon demoknight
+			Skill Hard
+			Item "The Chargin' Targe"
+			Item "The Eyelander"
+			WeaponRestrictions MeleeOnly
+			CharacterAttributes
+			{
+				"critboost on kill" 3
+			}
+		}
+		T_TFBot_Demoman_Golpher
+			{	
+				Name "Golpher"
+				Class Demoman
+				Skill Expert
+				MaxVisionRange 400
+				Attributes Aggressive
+				WeaponRestrictions MeleeOnly
+				Item "Ali Baba's Wee Booties"
+				Item "The Splendid Screen"
+				Item "Nessie's Nine Iron"
+				Item "Glengarry Bonnet"
+				Item "The Bearded Bombardier"
+			}
+
+		// Soldier
+		T_TFBot_Soldier_Buff_Banner
+		{
+			Class Soldier
+			Name "Buff Soldier"
+			Skill Hard
+			ClassIcon soldier_buff
+			Attributes SpawnWithFullCharge
+			Item "The Buff Banner"
+		}
+		
+		T_TFBot_Soldier_Extended_Buff_Banner
+		{
+			Class Soldier
+			Name "Extended Buff Soldier"
+			Skill Normal
+			ClassIcon soldier_buff
+			Attributes SpawnWithFullCharge
+			Item "The Buff Banner"
+			CharacterAttributes 
+			{
+				"increase buff duration"	9.0
+			}
+		}
+		
+		T_TFBot_Soldier_Extended_Concheror
+		{
+			Class Soldier
+			Name "Extended Conch Soldier"
+			Skill Normal
+			ClassIcon soldier_conch
+			Attributes SpawnWithFullCharge
+			Item "The Concheror"
+			CharacterAttributes 
+			{
+				"increase buff duration"	9.0
+			}
+		}
+		T_TFBot_Soldier_Bazooka
+		{
+			Class Soldier
+			Name "Vagabond"
+			Item "The Beggar's Bazooka"
+			Attributes HoldFireUntilFullReload
+			WeaponRestrictions PrimaryOnly
+		}
+		T_TFBot_Soldier_Extended_Battalion
+		{
+			Class Soldier
+			Name "Extended Backup Soldier"
+			Skill Normal
+			ClassIcon soldier_backup
+			Attributes SpawnWithFullCharge
+			Item "The Battalion's Backup"
+			CharacterAttributes 
+			{
+				"increase buff duration"	9.0
+			}
+		}
+		T_TFBot_Tank_Buster
+		{
+			Class Soldier
+			Name "Tank Buster"
+			ClassIcon soldier
+			Skill Expert
+			Item "The Black Box"
+			Item "The Battalion's Backup"
+			Item "The Grenadier's Softcap"
+			Attributes SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"dmg bonus vs building" 1.2
+			}
+		}
+		// Pyro
+		T_TFBot_Easy_Pyro
+		{
+			Class Pyro
+			Skill Normal
+			WeaponRestrictions PrimaryOnly
+		}
+		T_TFBot_Pyro
+		{
+			Class Pyro
+			Skill Expert
+			Item "Respectless Rubber Glove"
+		}
+		T_TFBot_Phlog_Pyro
+		{
+			Class Pyro
+			Name "Phlogistinator"
+			Skill Expert
+			Item "The Phlogistinator"
+			Item "The Manmelter"
+			Item "The Third Degree"
+			Item "The Bubble Pipe"
+			Item "The Moonman Backpack"
+			Attributes SpawnWithFullCharge
+		}
+		T_TFBot_Chop_Pyro
+		{
+			Class Pyro
+			Name "Chop Chop Chop"
+			Skill Expert
+			WeaponRestrictions MeleeOnly
+			Item "The Third Degree"
+			Item "The Bubble Pipe"
+			Item "The Moonman Backpack"
+			Health 65
+			Scale 0.65
+			Attributes AlwaysCrit
+			CharacterAttributes
+			{
+				"move speed bonus"	3
+				"damage penalty" 0.769
+			}
+		}
+		T_TFBot_Pyro_Flaregun
+		{
+			Class Pyro
+			Name "Flare Pyro"
+			Skill Normal
+			ClassIcon pyro_flare
+			Item "The Flare Gun"
+			WeaponRestrictions SecondaryOnly
+		}
+		T_TFBot_ScorchShot
+		{
+			Class Pyro
+			Name "Pyro Pusher"
+			Skill Expert
+			ClassIcon pyro_flare
+			Item "The Scorch Shot"
+			WeaponRestrictions SecondaryOnly
+			Attributes AlwaysCrit
+			CharacterAttributes
+			{
+				"damage bonus"	1
+				"fire rate bonus" 0.75
+				"faster reload rate" 1.25
+				"Projectile speed increased" 0.35
+			}				
+		}
+		//Engineer
+		T_TFBot_Engineer_Sentry_Teleporter
+		{
+			Class Engineer
+			Name Engineer
+			Skill Expert
+		}
+	}
+}

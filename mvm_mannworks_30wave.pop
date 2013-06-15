@@ -820,14 +820,14 @@ WaveSchedule
 		T_OPT_TFBot_Pirate_Cannoneer
 		{
 			Class               Demoman
-			Skill               Easy
+			Skill               Normal
 			Name                "Pirate Cannoneer"
 			WeaponRestrictions  PrimaryOnly
 			Item                "The Loose Cannon"
-			//Item                "The Bootlegger"
-			Item                "The Buccaneer's Bicorne" // OK
+			Item                "The Buccaneer's Bicorne"
 			Item                "The Bird-Man of Aberdeen"
 			Item                "A Whiff of the Old Brimstone"
+			Attributes          HoldFireUntilFullReload
 			Health              400
 			CharacterAttributes
 			{
@@ -1384,6 +1384,43 @@ WaveSchedule
 			{
 				"move speed bonus" 0.5
 			}
+		}
+		T_TFBot_Engineer_Sentry_Teleporter
+		{
+			Class         Engineer
+			Name          Engineer
+			Skill         Expert
+			TeleportWhere spawnbot
+			Health        500
+			Attributes    TeleportToHint
+		}
+	}
+	Mission // One engie from waves 8 to 12.
+	{
+		Objective           Engineer
+		InitialCooldown     60
+		Where               spawnbot_mission_sniper
+		BeginAtWave         8
+		RunForThisManyWaves 4
+		CooldownTime        30
+		DesiredCount        1
+		TFBot
+		{
+			Template T_TFBot_Engineer_Sentry_Teleporter
+		}
+	}
+	Mission // Two engineers in Wave 13 and afterwards.
+	{
+		Objective           Engineer
+		InitialCooldown     60
+		Where               spawnbot_mission_sniper
+		BeginAtWave         13
+		RunForThisManyWaves 17
+		CooldownTime        30
+		DesiredCount        2
+		TFBot
+		{
+			Template T_TFBot_Engineer_Sentry_Teleporter
 		}
 	}
 	// MISSION: Sentry Buster

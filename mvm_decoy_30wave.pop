@@ -1108,6 +1108,25 @@ WaveSchedule
 				"charge recharge rate increased" 2.0
 			}
 		}
+		T_OPT_TFBot_Pirate_Cannoneer
+		{
+			Class               Demoman
+			Skill               Normal
+			Name                "Pirate Cannoneer"
+			WeaponRestrictions  PrimaryOnly
+			Item                "The Loose Cannon"
+			Item                "The Buccaneer's Bicorne"
+			Item                "The Bird-Man of Aberdeen"
+			Item                "A Whiff of the Old Brimstone"
+			Attributes          HoldFireUntilFullReload
+			Health              400
+			CharacterAttributes
+			{
+				"move speed bonus"             0.5
+				"dmg taken from crit reduced"  0.0
+				"grenade launcher mortar mode" -2
+			}
+		}
 		T_OPT_TFBot_Chef
 		{
 			Class               Pyro
@@ -1364,6 +1383,43 @@ WaveSchedule
 			Name               "Accurate Sniper"
 			Skill              Expert
 			WeaponRestrictions PrimaryOnly
+		}
+		T_TFBot_Engineer_Sentry_Teleporter
+		{
+			Class         Engineer
+			Name          Engineer
+			Skill         Expert
+			TeleportWhere spawnbot
+			Health        500
+			Attributes    TeleportToHint
+		}
+	}
+	Mission // One engie from waves 8 to 12.
+	{
+		Objective           Engineer
+		InitialCooldown     60
+		Where               spawnbot_mission_sniper
+		BeginAtWave         8
+		RunForThisManyWaves 4
+		CooldownTime        30
+		DesiredCount        1
+		TFBot
+		{
+			Template T_TFBot_Engineer_Sentry_Teleporter
+		}
+	}
+	Mission // Two engineers in Wave 13 and afterwards.
+	{
+		Objective           Engineer
+		InitialCooldown     60
+		Where               spawnbot_mission_sniper
+		BeginAtWave         13
+		RunForThisManyWaves 17
+		CooldownTime        30
+		DesiredCount        2
+		TFBot
+		{
+			Template T_TFBot_Engineer_Sentry_Teleporter
 		}
 	}
 	// MISSION: Sentry Buster
@@ -2971,9 +3027,32 @@ WaveSchedule
 			WaitBetweenSpawns  0
 			WaitBeforeStarting 0
 			TotalCurrency      3000
-			TFBot
+			Squad
 			{
-				Template T_OPT_TFBot_The_King_Knight
+				TFBot
+				{
+					Template T_OPT_TFBot_The_King_Knight
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
 			}
 		}
 	}
@@ -3127,6 +3206,10 @@ WaveSchedule
 				{
 					Template T_OPT_TFBot_Pirate
 				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
 			}
 		}
 		WaveSpawn // Wave 9.4
@@ -3191,7 +3274,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Boxer
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -4126,6 +4209,10 @@ WaveSchedule
 				{
 					Template T_OPT_TFBot_Sticky_Demo
 				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
 			}
 		}
 		WaveSpawn // Wave 12.4
@@ -4616,6 +4703,10 @@ WaveSchedule
 				TFBot
 				{
 					Template T_OPT_TFBot_Pirate
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -5148,6 +5239,10 @@ WaveSchedule
 				TFBot
 				{
 					Template T_OPT_TFBot_Pirate
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -5732,7 +5827,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Pirate
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -6827,7 +6922,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Pirate
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{

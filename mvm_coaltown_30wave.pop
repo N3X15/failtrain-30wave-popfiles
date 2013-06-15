@@ -736,6 +736,25 @@ WaveSchedule
 				"charge recharge rate increased" 2.0
 			}
 		}
+		T_OPT_TFBot_Pirate_Cannoneer
+		{
+			Class               Demoman
+			Skill               Normal
+			Name                "Pirate Cannoneer"
+			WeaponRestrictions  PrimaryOnly
+			Item                "The Loose Cannon"
+			Item                "The Buccaneer's Bicorne"
+			Item                "The Bird-Man of Aberdeen"
+			Item                "A Whiff of the Old Brimstone"
+			Attributes          HoldFireUntilFullReload
+			Health              400
+			CharacterAttributes
+			{
+				"move speed bonus"             0.5
+				"dmg taken from crit reduced"  0.0
+				"grenade launcher mortar mode" -2
+			}
+		}
 		T_OPT_TFBot_Boom_Maker
 		{
 			Class               Demoman
@@ -1388,7 +1407,45 @@ WaveSchedule
 				"charge recharge rate increased" 2.0
 			}
 		}
+		T_TFBot_Engineer_Sentry_Teleporter
+		{
+			Class         Engineer
+			Name          Engineer
+			Skill         Expert
+			TeleportWhere spawnbot
+			Health        500
+			Attributes    TeleportToHint
+		}
 	}
+	Mission // One engie from waves 8 to 12.
+	{
+		Objective           Engineer
+		InitialCooldown     60
+		Where               spawnbot
+		BeginAtWave         8
+		RunForThisManyWaves 4
+		CooldownTime        30
+		DesiredCount        1
+		TFBot
+		{
+			Template T_TFBot_Engineer_Sentry_Teleporter
+		}
+	}
+	Mission // Two engineers in Wave 13 and afterwards.
+	{
+		Objective           Engineer
+		InitialCooldown     60
+		Where               spawnbot
+		BeginAtWave         13
+		RunForThisManyWaves 17
+		CooldownTime        30
+		DesiredCount        2
+		TFBot
+		{
+			Template T_TFBot_Engineer_Sentry_Teleporter
+		}
+	}
+	// MISSION: Sentry Buster
 	Mission
 	{
 		Objective    DestroySentries
@@ -1399,19 +1456,21 @@ WaveSchedule
 			Template T_TFBot_SentryBuster
 		}
 	}
+	// MISSION: Spy Sapper
 	Mission
 	{
 		Objective           Spy
 		InitialCooldown     30
 		Where               spawnbot
 		RunForThisManyWaves 1
-		CooldownTime        5
+		CooldownTime        15
 		DesiredCount        1
 		TFBot
 		{
 			Template T_OPT_TFBot_Spy_Sapper
 		}
 	}
+	// MISSION: Spy Mobbers
 	Mission
 	{
 		Objective           Spy
@@ -1426,6 +1485,7 @@ WaveSchedule
 			BehaviorModifiers Mobber
 		}
 	}
+	// MISSION: Sniper
 	Mission
 	{
 		Objective           Sniper
@@ -1440,6 +1500,7 @@ WaveSchedule
 			Template T_OPT_TFBot_Accurately_Sniper
 		}
 	}
+	// MISSION: Sniper
 	Mission
 	{
 		Objective           Sniper
@@ -1900,14 +1961,13 @@ WaveSchedule
 			{
 				TFBot
 				{
-					Template            T_TFBot_Giant_Heavyweapons_Natascha
+					Template            T_TFBot_Giant_Heavyweapons
 					Skill               Easy
 					Health              10000
 					Item                "Warrior's Spirit"
 					Item                "Big Chief"
 					Item                "The All-Father"
 					WeaponRestrictions  MeleeOnly
-					MaxVisionRange      1200
 					CharacterAttributes
 					{
 						"damage bonus" 2.0
@@ -1935,7 +1995,8 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn // Wave 3.2 - N3X15: Added support wave.
+		// N3X15: Added support wave.
+		WaveSpawn // Wave 3.2
 		{
 			Where             spawnbot
 			Support           1
@@ -2990,9 +3051,32 @@ WaveSchedule
 			WaitBetweenSpawns  0
 			WaitBeforeStarting 0
 			TotalCurrency      3000
-			TFBot
+			Squad // N3X - Added Squad
 			{
-				Template T_OPT_TFBot_The_King_Knight
+				TFBot
+				{
+					Template T_OPT_TFBot_The_King_Knight
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
 			}
 		}
 	}
@@ -3144,7 +3228,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Pirate
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 			}
 		}
@@ -3210,7 +3294,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Boxer
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -3539,7 +3623,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Pirate
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -3860,9 +3944,8 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template   T_TFBot_Giant_Soldier_Crit
-				Health     3000
-				Attributes AlwaysCrit
+				Template T_TFBot_Giant_Soldier_Crit
+				Health   3000
 			}
 		}
 		WaveSpawn // Wave 11.3
@@ -3921,7 +4004,6 @@ WaveSchedule
 			TFBot
 			{
 				Template            T_TFBot_Giant_Demo_RapidFire
-				Attributes          HoldFireUntilFullReload
 				CharacterAttributes
 				{
 					"faster reload rate" -0.4
@@ -3940,9 +4022,8 @@ WaveSchedule
 			TotalCurrency      300
 			TFBot
 			{
-				Template       T_TFBot_Giant_Heavyweapons_Natascha
-				Health         4000
-				MaxVisionRange 1200
+				Template T_TFBot_Giant_Heavyweapons
+				Health   4000
 			}
 		}
 		WaveSpawn // Wave 11.8
@@ -4147,6 +4228,10 @@ WaveSchedule
 				TFBot
 				{
 					Template T_OPT_TFBot_Sticky_Demo
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 			}
 		}
@@ -4638,6 +4723,10 @@ WaveSchedule
 				TFBot
 				{
 					Template T_OPT_TFBot_Pirate
+				}
+				TFBot
+				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -5173,6 +5262,10 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template T_OPT_TFBot_Pirate_Cannoneer
+				}
+				TFBot
+				{
 					Template T_OPT_TFBot_Boom_Maker
 				}
 				TFBot
@@ -5246,9 +5339,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template   T_TFBot_Giant_Soldier_Crit
-					Health     3000
-					Attributes AlwaysCrit
+					Template T_TFBot_Giant_Soldier_Crit
+					Health   3000
 				}
 			}
 		}
@@ -5373,7 +5465,6 @@ WaveSchedule
 					Template            T_TFBot_Giant_Medic
 					Skill               Easy
 					Health              2000
-					Attributes          SpawnWithFullCharge
 					Scale               2.0
 					CharacterAttributes
 					{
@@ -5758,7 +5849,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Pirate
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -5779,7 +5870,6 @@ WaveSchedule
 				TFBot
 				{
 					Template            T_TFBot_Giant_Demo_RapidFire
-					Attributes          HoldFireUntilFullReload
 					CharacterAttributes
 					{
 						"faster reload rate" -0.4
@@ -5843,9 +5933,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template   T_TFBot_Giant_Soldier_Crit
-					Health     3000
-					Attributes AlwaysCrit
+					Template T_TFBot_Giant_Soldier_Crit
+					Health   3000
 				}
 				TFBot
 				{
@@ -5912,9 +6001,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template       T_TFBot_Giant_Heavyweapons_Natascha
-					Health         4000
-					MaxVisionRange 1200
+					Template T_TFBot_Giant_Heavyweapons
+					Health   4000
 				}
 			}
 		}
@@ -5974,7 +6062,6 @@ WaveSchedule
 					Template            T_TFBot_Giant_Medic
 					Skill               Easy
 					Health              2000
-					Attributes          SpawnWithFullCharge
 					Scale               2.0
 					CharacterAttributes
 					{
@@ -6794,9 +6881,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template       T_TFBot_Giant_Heavyweapons_Natascha
-					Health         4000
-					MaxVisionRange 1200
+					Template T_TFBot_Giant_Heavyweapons
+					Health   4000
 				}
 			}
 		}
@@ -6859,7 +6945,7 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_OPT_TFBot_Pirate
+					Template T_OPT_TFBot_Pirate_Cannoneer
 				}
 				TFBot
 				{
@@ -6960,9 +7046,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template   T_TFBot_Giant_Soldier_Crit
-					Health     3000
-					Attributes AlwaysCrit
+					Template T_TFBot_Giant_Soldier_Crit
+					Health   3000
 				}
 				TFBot
 				{

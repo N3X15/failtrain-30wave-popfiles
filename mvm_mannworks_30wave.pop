@@ -1385,42 +1385,41 @@ WaveSchedule
 				"move speed bonus" 0.5
 			}
 		}
-		T_TFBot_Engineer_Sentry_Teleporter
+		T_TFBot_Engineer_Sentry_Tele_Battle
 		{
 			Class         Engineer
 			Name          Engineer
 			Skill         Expert
 			TeleportWhere spawnbot
-			Health        500
-			Attributes    TeleportToHint
+			Health        275
 		}
 	}
 	Mission // One engie from waves 8 to 12.
 	{
 		Objective           Engineer
 		InitialCooldown     60
-		Where               spawnbot_mission_sniper
+		Where               spawnbot
 		BeginAtWave         8
 		RunForThisManyWaves 4
 		CooldownTime        30
 		DesiredCount        1
 		TFBot
 		{
-			Template T_TFBot_Engineer_Sentry_Teleporter
+			Template T_TFBot_Engineer_Sentry_Tele_Battle
 		}
 	}
 	Mission // Two engineers in Wave 13 and afterwards.
 	{
 		Objective           Engineer
 		InitialCooldown     60
-		Where               spawnbot_mission_sniper
+		Where               spawnbot
 		BeginAtWave         13
 		RunForThisManyWaves 17
 		CooldownTime        30
 		DesiredCount        2
 		TFBot
 		{
-			Template T_TFBot_Engineer_Sentry_Teleporter
+			Template T_TFBot_Engineer_Sentry_Tele_Battle
 		}
 	}
 	// MISSION: Sentry Buster

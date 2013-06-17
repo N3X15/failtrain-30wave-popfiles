@@ -1407,14 +1407,13 @@ WaveSchedule
 				"charge recharge rate increased" 2.0
 			}
 		}
-		T_TFBot_Engineer_Sentry_Teleporter
+		T_TFBot_Engineer_Sentry_Tele_Battle
 		{
 			Class         Engineer
 			Name          Engineer
 			Skill         Expert
 			TeleportWhere spawnbot
-			Health        500
-			Attributes    TeleportToHint
+			Health        275
 		}
 	}
 	Mission // One engie from waves 8 to 12.
@@ -1428,7 +1427,7 @@ WaveSchedule
 		DesiredCount        1
 		TFBot
 		{
-			Template T_TFBot_Engineer_Sentry_Teleporter
+			Template T_TFBot_Engineer_Sentry_Tele_Battle
 		}
 	}
 	Mission // Two engineers in Wave 13 and afterwards.
@@ -1442,7 +1441,7 @@ WaveSchedule
 		DesiredCount        2
 		TFBot
 		{
-			Template T_TFBot_Engineer_Sentry_Teleporter
+			Template T_TFBot_Engineer_Sentry_Tele_Battle
 		}
 	}
 	// MISSION: Sentry Buster

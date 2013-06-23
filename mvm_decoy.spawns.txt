@@ -1,4 +1,7 @@
 spawnbot
+spawnbot_invasion
+spawnbot_left
 spawnbot_mission_sniper
 spawnbot_mission_spy
-spawnbot_invasion
+spawnbot_right
+spawnbot_single_flag

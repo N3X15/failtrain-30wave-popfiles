@@ -1,3 +1,5 @@
 spawnbot
+spawnbot_giant
+spawnbot_invasion
 spawnbot_mission_sniper
 spawnbot_mission_spy

@@ -1,6 +1,4 @@
 spawnbot
-spawnbot_left
-spawnbot_lower
+spawnbot_giant
 spawnbot_mission_sniper
 spawnbot_mission_spy
-spawnbot_right

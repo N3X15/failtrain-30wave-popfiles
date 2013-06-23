@@ -21,6 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 import os,sys,re,logging as log
+import argparse
 from keyvalues import KeyValues
 
 # Everything not alphanumeric will match this.
@@ -83,14 +84,14 @@ def exportPopfile(kv,file):
 	if 'Templates' not in kv:
 		kv['Templates']=KeyValues('Templates')
 	skipped=[]
-	for id in templates:
+	new_kv = KeyValues("Templates")
+	for id in sorted(templates):
 		if id in template_uses:
-			kv['Templates'][id]=templates[id]
-			#kv['Templates'][id]['UsedTimes']=template_uses[id]
+			new_kv[id]=templates[id]
+			new_kv.set_comment(id,'Used {0} times'.format(template_uses[id]),0)
 		else:
-			if id in kv['Templates']:
-				del(kv['Templates'][id])
 			skipped.append(id)
+	kv['Templates']=new_kv
 	kv.save(file)
 	log.info("Saved {0} templates to {1} ({2} skipped).".format(len(kv['Templates']),file,len(skipped)))
 
@@ -240,19 +241,41 @@ def scanForInvalidTemplates(kv,file,path):
 					# Optimize
 					kv = makeOptimizedTemplate(kv,file,cwd)
 	return kv
+	
+#importTemplates('includes/robot_standard.pop')
+#importTemplates('includes/robot_giant.pop')
 
-log.basicConfig(format='%(asctime)s [%(levelname)-8s]: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename=sys.argv[1]+'.log',filemode='w',level=log.DEBUG)
+parser = argparse.ArgumentParser(description='Clean up and optimize TF2 MvM Popfiles')
 
-importTemplates('includes/robot_standard.pop')
-importTemplates('includes/robot_giant.pop')
+# -o --output Specify output file
+parser.add_argument('-o', '--output', nargs='?', default='', help='Specify where the completed file should go')
+# -i --include Include templates from a file
+parser.add_argument('-i', '--include', nargs='*', default=['includes/robot_giant.pop','includes/robot_standard.pop'], help='Include templates from a file')
+parser.add_argument('input_file', nargs=1, help='The popfile to be processed.')
 
+args  = parser.parse_args()
+
+outfile = args.output
+if outfile == '':
+	outfile=args.input_file+'.new'
+outfile = os.path.abspath(outfile)
+outdir = os.path.dirname(outfile)
+if not os.path.isdir(outdir):
+	os.makedirs(outdir)
+
+log.basicConfig(format='%(asctime)s [%(levelname)-8s]: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filename=outfile+'.log',filemode='w',level=log.DEBUG)
+
+for included_file in args.include:
+	importTemplates(included_file)
+	
 kv = KeyValues()
 kv.load(sys.argv[1])
 if 'Templates' in kv:
 	for id in kv['Templates']:
 		templates[id]=kv['Templates'][id]
 log.info('Loaded {0} templates.'.format(len(templates)))
-scanForInvalidTemplates(kv,sys.argv[1],['WaveSchedule'])
+
+scanForInvalidTemplates(kv,args.input_file,['WaveSchedule'])
 
 log.info('Finished scanning: {0} warnings, {1} errors.'.format(stats['warnings'],stats['errors']))
 
@@ -260,5 +283,7 @@ log.info('Used templates: {0}'.format(len(template_uses)))
 for key in sorted(template_uses.keys()):
 	log.info('Template {0}: Used {1} times.'.format(key,template_uses[key]))
 
-exportTemplates('PARSED_TEMPLATES.pop')
-exportPopfile(kv,sys.argv[1]+'.new')
+#exportTemplates('PARSED_TEMPLATES.pop')
+
+exportPopfile(kv,outfile)
+log.info('Exported to {0}.'.format(outfile))

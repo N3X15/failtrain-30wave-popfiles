@@ -60,6 +60,7 @@ class KeyValues(collections.MutableMapping):
 		
 	def set_comment(self, key, value, location=COMMENT_LOCATION_DEFAULT):
 		self.comments[key]=Comment(value, location)
+		#print("self.comments['{0}'] = {1}".format(key,repr(self.comments[key])))
 		
 	def get_comment(self, key):
 		if key in self.comments:
@@ -141,13 +142,14 @@ class KeyValues(collections.MutableMapping):
 			comment_list = []
 			if key in self.comments:
 				comment = self.comments[key]
+				#print("self.comments[{}] = {}".format(key,repr(comment)))
 				if type(comment) is list:
 					comment_list=comment
 					comment=comment_list[0]
-				if comment.location==COMMENT_LOCATION_ABOVE:
+				if comment != '' and comment.location==COMMENT_LOCATION_ABOVE:
 					result += prefix_in + str(comment) + line_break
 					comment=''
-				if comment.location==COMMENT_LOCATION_SAMELINE:
+				if comment != '' and comment.location==COMMENT_LOCATION_SAMELINE:
 					comment=' '+str(comment)
 			# Uncomment to spam types.
 			#result += prefix_in + '// '+str(type(value)) + line_break

@@ -29,6 +29,63 @@ from keyvalues import KeyValues
 #  instead of singular instances.
 REGEX_INVALID_TEMPLATE_KEY_CHARS=re.compile(r'[^a-zA-Z0-9]+')
 
+# Valid Keys.
+ValidKeys = [
+	'Action',
+	'Advanced',
+	'Attributes',
+	'BeginAtWave',
+	'BehaviorModifiers',
+	'CanBotsAttackWhileInSpawnRoom',
+	'CharacterAttributes',
+	'Checkpoint',
+	'Class',
+	'ClassIcon',
+	'CooldownTime',
+	'DesiredCount',
+	'DoneOutput',
+	'Health',
+	'InitialCooldown',
+	'Item',
+	'MaxActive',
+	'MaxVisionRange',
+	'Mission',
+	'Name',
+	'Objective',
+	'OnBombDroppedOutput',
+	'RandomChoice',
+	'RespawnWaveTime',
+	'RunForThisManyWaves',
+	'Scale',
+	'Skill',
+	'Skin',
+	'Sound',
+	'SpawnCount',
+	'Speed',
+	'Squad',
+	'StartingCurrency',
+	'StartingPathTrackNode',
+	'StartWaveOutput',
+	'Support',
+	'Tank',
+	'Target',
+	'TeleportWhere',
+	'Template',
+	'Templates',
+	'TFBot',
+	'TotalCount',
+	'TotalCurrency',
+	'WaitBeforeStarting',
+	'WaitBetweenSpawns',
+	'WaitForAllSpawned',
+	'WaitWhenDone',
+	'Wave',
+	'WaveSchedule',
+	'WaveSpawn',
+	'WeaponRestrictions',
+	'Where',
+]
+
 # Template data
 templates = {}
 
@@ -181,8 +238,25 @@ def scanForInvalidTemplates(kv,file,path):
 			continue
 		value=kv[key]
 		cwdp = path+[key]
+		parent=cwdp[-2]
 		#print((' '*len(cwdp))+' {0} = {1}'.format(key,type(value)))
 		cwd = '/'.join(cwdp)
+		if key not in ValidKeys:
+			if parent not in ['Templates','CharacterAttributes']:
+				foundCorrectCase=False
+				for vkey in ValidKeys:
+					if vkey.lower() == key.lower():
+						log.warning('{0} > {1}:  Key "{2}" has bad capitalization! The correct form is "{3}".'.format(file,cwd,key,vkey))
+						stats['warnings']+=1
+						foundCorrectCase=True
+						temp = kv[key]
+						del kv[key]
+						kv[vkey] = temp
+						key=vkey
+						break
+				if not foundCorrectCase:
+					log.warning('{0} > {1}:  Unidentified key "{2}"!'.format(file,cwd,key))
+					stats['warnings']+=1
 		if type(value) is list or type(value) is KeyValues:
 			kv[key]=scanForInvalidTemplates(value,file,cwdp)
 			if type(value) is list:

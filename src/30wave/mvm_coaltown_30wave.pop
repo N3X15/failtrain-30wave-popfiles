@@ -845,7 +845,7 @@ WaveSchedule
 				"move speed bonus" 0.5
 			}
 		}
-		// Used 10 times
+		// Used 11 times
 		T_OPT_TFBot_So_Fast
 		{
 			Class               Scout
@@ -2039,7 +2039,8 @@ WaveSchedule
 					WeaponRestrictions  MeleeOnly
 					CharacterAttributes
 					{
-						"damage bonus" 2.0
+						"cannot be backstabbed" 1
+						"damage bonus"          2.0
 					}
 				}
 				TFBot
@@ -2387,7 +2388,23 @@ WaveSchedule
 			Target bombpath_wavefinished
 			Action Trigger
 		}
-		WaveSpawn
+		WaveSpawn // Wave 5.1
+		{
+			Where              spawnbot
+			TotalCount         100
+			MaxActive          20
+			SpawnCount         5
+			WaitBetweenSpawns  0
+			WaitBeforeStarting 0
+			WaitWhenDone       10
+			TotalCurrency      1000
+			Name               wave5a
+			TFBot
+			{
+				Template T_OPT_TFBot_So_Fast
+			}
+		}
+		WaveSpawn // Wave 5.2
 		{
 			Where              spawnbot
 			TotalCount         1
@@ -2396,6 +2413,7 @@ WaveSchedule
 			WaitBetweenSpawns  0
 			WaitBeforeStarting 0
 			TotalCurrency      1000
+			WaitForAllSpawned  wave5a
 			TFBot
 			{
 				Template            T_TFBot_Giant_Scout
@@ -2407,6 +2425,7 @@ WaveSchedule
 				Item                "Bonk Boy"
 				CharacterAttributes
 				{
+					"cannot be backstabbed"             1
 					"move speed bonus"                  2.0
 					"damage force reduction"            0.3
 					"airblast vulnerability multiplier" 0.3

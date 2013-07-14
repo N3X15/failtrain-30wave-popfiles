@@ -957,7 +957,7 @@ WaveSchedule
 			Item                "The Claidheamohmor"
 			Item                "The Chargin' Targe"
 			Item                "Prince Tavish's Crown"
-			Health              20000
+			Health              10000
 			CharacterAttributes
 			{
 				"cannot be backstabbed"          1
@@ -2422,11 +2422,13 @@ WaveSchedule
 				WeaponRestrictions  MeleeOnly
 				MaxVisionRange      1200
 				Item                "The Atomizer"
-				Item                "Bonk Boy"
+				Item                "Flight of the Monarch"
+				Item                "Flunkyware"
+				Item                "Hanger-On Hood"
 				CharacterAttributes
 				{
 					"cannot be backstabbed"             1
-					"move speed bonus"                  2.0
+					"move speed bonus"                  1.5
 					"damage force reduction"            0.3
 					"airblast vulnerability multiplier" 0.3
 					"override footstep sound set"       2

@@ -1591,13 +1591,13 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
-			Action Trigger
+			Target wave_finished_relay
+			Action trigger
 		}
 		WaveSpawn // Wave 1.1
 		{
@@ -1767,12 +1767,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 2.1
@@ -2009,12 +2009,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 3.1 - N3X15: Made a Squad, added 5 medics
@@ -2086,12 +2086,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 4.1
@@ -2380,12 +2380,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 5.1
@@ -2443,12 +2443,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 6.1
@@ -2750,12 +2750,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 7.1
@@ -3126,12 +3126,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 8.1
@@ -3194,12 +3194,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 9.1
@@ -3569,12 +3569,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 10.1
@@ -4019,12 +4019,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 11.1
@@ -4158,12 +4158,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 12.1
@@ -4594,12 +4594,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 13.1
@@ -4650,12 +4650,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 14.1
@@ -5122,12 +5122,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 15.1
@@ -5172,12 +5172,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 16.1
@@ -5688,12 +5688,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 17.1
@@ -5738,12 +5738,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 18.1
@@ -6294,12 +6294,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -6327,12 +6327,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -6420,12 +6420,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 21.1
@@ -6476,12 +6476,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -6543,12 +6543,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 23.1
@@ -6599,12 +6599,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -6670,12 +6670,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -6755,12 +6755,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 26.1
@@ -6835,12 +6835,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -6918,12 +6918,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -6998,12 +6998,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn
@@ -7086,12 +7086,12 @@ WaveSchedule
 		Checkpoint      Yes
 		StartWaveOutput
 		{
-			Target bombpath_arrows_clear_relay
+			Target wave_start_relay
 			Action Trigger
 		}
 		DoneOutput
 		{
-			Target bombpath_wavefinished
+			Target wave_finished_relay
 			Action Trigger
 		}
 		WaveSpawn // Wave 30.1

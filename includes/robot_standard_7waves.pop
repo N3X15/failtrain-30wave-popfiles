@@ -123,7 +123,7 @@ WaveSchedule
 			Item "The Red-Tape Recorder"
 		}
 		T_TFBot_Minion_Spy
-		{	
+		{
 				Name "Minion Spy"
 				Health 60
 				Class Spy
@@ -144,7 +144,7 @@ WaveSchedule
 				}
 		}
 		T_TFBot_King_Spy
-		{	
+		{
 				Name "King Spy"
 				Health 600
 				Class Spy
@@ -296,6 +296,7 @@ WaveSchedule
 				"dmg taken from crit reduced" 0.7
 				"lunchbox adds minicrits" 2
 			}
+		}
 		T_TFBot_Heavyweapons_Gnome
 		{
 			Class Heavyweapons

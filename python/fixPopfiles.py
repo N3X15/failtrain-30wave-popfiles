@@ -307,7 +307,8 @@ def scanForInvalidTemplates(kv,file,path):
 			else:
 				template_uses[value]+=1
 			# Check to see if values match parent
-			kv=checkForValueDuplication(kv,templates[value],file,cwd)
+			if value in templates:
+				kv=checkForValueDuplication(kv,templates[value],file,cwd)
 			
 		if cwdp[-2].split('[')[0] == 'TFBot' or cwdp[-2] == 'Templates':
 			if key == 'Name':

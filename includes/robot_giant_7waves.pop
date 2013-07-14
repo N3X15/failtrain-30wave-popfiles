@@ -175,7 +175,7 @@ WaveSchedule
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 5
 			}
-			
+		}
 		T_TFBot_Giant_Heavyweapons_BrassBeast
 		{
 			Class Heavyweapons

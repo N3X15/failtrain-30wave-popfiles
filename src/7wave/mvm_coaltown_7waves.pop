@@ -1,58 +1,44 @@
-#base robot_giant_7waves.pop
-#base robot_standard_7waves.pop
-
 WaveSchedule
 {
-
-	StartingCurrency		10000
-	RespawnWaveTime 5
+	StartingCurrency              10000
+	RespawnWaveTime               5
 	CanBotsAttackWhileInSpawnRoom no
-	
-	Mission // sentry buster
+	Mission
 	{
-		Objective DestroySentries
-
-		InitialCooldown 5
-		Where spawnbot
-		BeginAtWave 1
+		Objective           DestroySentries
+		InitialCooldown     5
+		Where               spawnbot
+		BeginAtWave         1
 		RunForThisManyWaves 6
-
-		CooldownTime 35            
-
-            TFBot
-			{
-				Template T_TFBot_SentryBuster
-            }
-	}
-	Mission // Sniper - wave 4
-	{
-		Objective Sniper
-
-		InitialCooldown 15
-		Where spawnbot_mission_sniper
-		BeginAtWave 4
-		RunForThisManyWaves 1
-		CooldownTime 35
-		DesiredCount 2
-
+		CooldownTime        35
 		TFBot
 		{
-			Class Sniper
-			Skill Expert
-			Name Sniper
+			Template T_TFBot_SentryBuster
 		}
-	}	
-	Mission // Spy - wave 1
+	}
+	Mission
 	{
-		Objective Spy  
-
-		InitialCooldown 20
-		Where spawnbot_mission_spy
-		BeginAtWave 1
+		Objective           Sniper
+		InitialCooldown     15
+		Where               spawnbot_mission_sniper
+		BeginAtWave         4
+		RunForThisManyWaves 1
+		CooldownTime        35
+		DesiredCount        2
+		TFBot
+		{
+			Template T_OPT_TFBot_Sniper
+		}
+	}
+	Mission
+	{
+		Objective           Spy
+		InitialCooldown     20
+		Where               spawnbot_mission_spy
+		BeginAtWave         1
 		RunForThisManyWaves 7
-		CooldownTime 15
-		DesiredCount 1
-
+		CooldownTime        15
+		DesiredCount        1
 		TFBot
 		{
 			Template T_TFBot_Spy
@@ -69,42 +55,37 @@ WaveSchedule
 		{
 			Template T_TFBot_King_Spy
 		}
-	}	
-	//WAVE 1 //Melee Heavies and Scout Melees //Currency 500 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-	Wave
+	}
+	Wave // Wave 1
 	{
 		StartWaveOutput
 		{
 			Target wave_start_relay
 			Action Trigger
 		}
-		DoneOutput					
+		DoneOutput
 		{
 			Target wave_finished_relay
 			Action trigger
 		}
-		WaitWhenDone 65
-		Description "penis penis penis"
-		Checkpoint Yes
-		
-		WaveSpawn
+		WaitWhenDone    65
+		Description     "penis penis penis"
+		Checkpoint      Yes
+		WaveSpawn // Wave 1.1
 		{
-			Name "primarywave"
-			
-			Where spawnbot
-			TotalCount 24
-			MaxActive 10
-			SpawnCount 2
+			Name               primarywave
+			Where              spawnbot
+			TotalCount         24
+			MaxActive          10
+			SpawnCount         2
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 4
-			TotalCurrency 100
-
+			WaitBetweenSpawns  4
+			TotalCurrency      100
 			RandomChoice
 			{
 				TFBot
 				{
 					Template T_TFBot_Heavyweapons_Heavyweight_Champ
-
 				}
 				TFBot
 				{
@@ -128,26 +109,22 @@ WaveSchedule
 				}
 			}
 		}
-		
-		WaveSpawn
+		WaveSpawn // Wave 1.2
 		{
-			WaitForAllSpawned "primarywave"
-			
-			Where spawnbot
-			TotalCount 20
-			MaxActive 12
-			SpawnCount 4
+			WaitForAllSpawned  primarywave
+			Where              spawnbot
+			TotalCount         20
+			MaxActive          12
+			SpawnCount         4
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 4
-			TotalCurrency 100
-			
+			WaitBetweenSpawns  4
+			TotalCurrency      100
 			Squad
 			{
 				TFBot
 				{
 					Template T_TFBot_Heavyweapons_Heavyweight_Champ
 				}
-				
 				TFBot
 				{
 					Template T_TFBot_Phlog_Pyro
@@ -160,49 +137,43 @@ WaveSchedule
 				{
 					Template T_TFBot_Chop_Pyro
 				}
-				
 				TFBot
 				{
 					Template T_TFBot_Tank_Buster
 				}
-				
 				TFBot
 				{
 					Template T_TFBot_Demoman_Golpher
 				}
 			}
-		}	
-		WaveSpawn
+		}
+		WaveSpawn // Wave 1.3
 		{
-			WaitForAllSpawned "primarywave"
-			
-			Where spawnbot
-			TotalCount 6
-			MaxActive 3
-			SpawnCount 1
+			WaitForAllSpawned  primarywave
+			Where              spawnbot
+			TotalCount         6
+			MaxActive          3
+			SpawnCount         1
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 1
-			TotalCurrency 100	
-
+			WaitBetweenSpawns  1
+			TotalCurrency      100
 			TFBot
 			{
-				Class Scout
-				Skill Easy
+				Class              Scout
+				Skill              Easy
 				WeaponRestrictions MeleeOnly
 			}
-		}	
-		WaveSpawn
+		}
+		WaveSpawn // Wave 1.4
 		{
-			WaitForAllSpawned "primarywave"
-			
-			Where spawnbot
-			TotalCount 3
-			MaxActive 3
-			SpawnCount 1
+			WaitForAllSpawned  primarywave
+			Where              spawnbot
+			TotalCount         3
+			MaxActive          3
+			SpawnCount         1
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 7
-			TotalCurrency 200
-			
+			WaitBetweenSpawns  7
+			TotalCurrency      200
 			RandomChoice
 			{
 				TFBot
@@ -243,37 +214,31 @@ WaveSchedule
 				}
 			}
 		}
-	}	
-	//WAVE 2 //Heavies and Pyros squads, Giant Pyro and pyro and heavy squad//Currency 500 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-	Wave
+	}
+	Wave // Wave 2
 	{
 		StartWaveOutput
 		{
 			Target wave_start_relay
 			Action Trigger
 		}
-		DoneOutput					
+		DoneOutput
 		{
 			Target wave_finished_relay
 			Action trigger
 		}
-		WaitWhenDone 65
-		Checkpoint Yes
-		
-		
-		WaveSpawn 
+		WaitWhenDone    65
+		Checkpoint      Yes
+		WaveSpawn // Wave 2.1
 		{
-			
-			Name wave2primarywave
-			
-			Where spawnbot
-			TotalCount 24
-			MaxActive 15
-			SpawnCount 3
-			WaitBetweenSpawns 3
+			Name               wave2primarywave
+			Where              spawnbot
+			TotalCount         24
+			MaxActive          15
+			SpawnCount         3
+			WaitBetweenSpawns  3
 			WaitBeforeStarting 0
-			TotalCurrency 200		
-			
+			TotalCurrency      200
 			Squad
 			{
 				TFBot
@@ -292,20 +257,17 @@ WaveSchedule
 					Skill Easy
 				}
 			}
-			
 		}
-		WaveSpawn
+		WaveSpawn // Wave 2.2
 		{
-			WaitForAllSpawned "wave2primarywave"
-			
-			Where spawnbot
-			TotalCount 10
-			MaxActive 10
-			SpawnCount 5
+			WaitForAllSpawned  wave2primarywave
+			Where              spawnbot
+			TotalCount         10
+			MaxActive          10
+			SpawnCount         5
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 10
-			TotalCurrency 300
-			
+			WaitBetweenSpawns  10
+			TotalCurrency      300
 			Squad
 			{
 				TFBot
@@ -334,273 +296,227 @@ WaveSchedule
 			}
 		}
 	}
-	//WAVE 3 //Tank Boss 28k, Scout melee support, Spy Mission//Currency 900 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-	Wave
+	Wave // Wave 3
 	{
 		StartWaveOutput
 		{
 			Target wave_start_relay
 			Action Trigger
 		}
-		DoneOutput					
+		DoneOutput
 		{
 			Target wave_finished_relay
 			Action trigger
 		}
-		WaitWhenDone 65
-		Checkpoint Yes
-		
-		// Spy mission - 1 active
-		
-		
-		WaveSpawn //WAVE
+		WaitWhenDone    65
+		Checkpoint      Yes
+		WaveSpawn // Wave 3.1
 		{
-			TotalCount 1
+			TotalCount         1
 			WaitBeforeStarting 0
-			TotalCurrency 900
-			
-			FirstSpawnOutput                                                                                                                                                            
-			
+			TotalCurrency      900
+			FirstSpawnOutput
 			{
-				Target boss_spawn_relay                                            
-				Action Trigger                         
+				Target boss_spawn_relay
+				Action Trigger
 			}
-
 			Tank
 			{
-				Health 28000
-				Speed 75
-				Name "tankboss"
-				StartingPathTrackNode "boss_path_a1"
-
-				OnKilledOutput                                  
+				Health                28000
+				Speed                 75
+				Name                  tankboss
+				StartingPathTrackNode boss_path_a1
+				OnKilledOutput
 				{
 					Target boss_dead_relay
-					Action Trigger                         
+					Action Trigger
 				}
-				
-				OnBombDroppedOutput                             
+				OnBombDroppedOutput
 				{
-					Target boss_deploy_relay 
-					Action Trigger                         
+					Target boss_deploy_relay
+					Action Trigger
 				}
-
-			}			
+			}
 		}
-		WaveSpawn
-		{			
-			Where spawnbot
-			TotalCount 8
-			MaxActive 8
-			SpawnCount 8
+		WaveSpawn // Wave 3.2
+		{
+			Where              spawnbot
+			TotalCount         8
+			MaxActive          8
+			SpawnCount         8
 			WaitBeforeStarting 15
-			WaitBetweenSpawns 0
-			
-			Support 1
-			
-			TotalCurrency 0
-
+			WaitBetweenSpawns  0
+			Support            1
+			TotalCurrency      0
 			TFBot
 			{
-				Class Scout
-				Skill Easy
+				Class              Scout
+				Skill              Easy
 				WeaponRestrictions MeleeOnly
 			}
 		}
-		WaveSpawn
-		{			
-			Where spawnbot
-			TotalCount 18
-			MaxActive 18
-			SpawnCount 18
+		WaveSpawn // Wave 3.3
+		{
+			Where              spawnbot
+			TotalCount         18
+			MaxActive          18
+			SpawnCount         18
 			WaitBeforeStarting 25
-			WaitBetweenSpawns 0
-			
-			Support 1
-			
-			TotalCurrency 0
-			
+			WaitBetweenSpawns  0
+			Support            1
+			TotalCurrency      0
 			TFBot
 			{
-				Class Scout
-				Skill Easy
+				Class              Scout
+				Skill              Easy
 				WeaponRestrictions MeleeOnly
 			}
-		}		
+		}
 	}
-	//WAVE 4 //Demos, Scout melees, Soldiers, Giant Demos, Sniper Mission MB //Currency 500 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-	Wave
+	Wave // Wave 4
 	{
 		StartWaveOutput
 		{
 			Target wave_start_relay
 			Action Trigger
 		}
-		DoneOutput					
+		DoneOutput
 		{
 			Target wave_finished_relay
 			Action trigger
 		}
-		WaitWhenDone 65
-		Checkpoint Yes
-		
-		// Sniper mission - 2 active		
-
-		
-		WaveSpawn 
+		WaitWhenDone    65
+		Checkpoint      Yes
+		WaveSpawn // Wave 4.1
 		{
-			
-			Name "wave4primarywave"
-			
-			Where spawnbot
-			TotalCount 24
-			MaxActive 8
-			SpawnCount 2
-			WaitBetweenSpawns 3
+			Name               wave4primarywave
+			Where              spawnbot
+			TotalCount         24
+			MaxActive          8
+			SpawnCount         2
+			WaitBetweenSpawns  3
 			WaitBeforeStarting 0
-			TotalCurrency 100		
-			
+			TotalCurrency      100
 			TFBot
 			{
 				Class Demoman
 				Skill Easy
 			}
 		}
-		WaveSpawn 
+		WaveSpawn // Wave 4.2
 		{
-			
-			Where spawnbot
-			TotalCount 12
-			MaxActive 6
-			SpawnCount 2
-			WaitBetweenSpawns 6
+			Where              spawnbot
+			TotalCount         12
+			MaxActive          6
+			SpawnCount         2
+			WaitBetweenSpawns  6
 			WaitBeforeStarting 0
-			TotalCurrency 100		
-			
+			TotalCurrency      100
 			TFBot
 			{
-				Class Scout
-				Skill Easy
+				Class              Scout
+				Skill              Easy
 				WeaponRestrictions MeleeOnly
 			}
 		}
-		WaveSpawn 
+		WaveSpawn // Wave 4.3
 		{
-			
-			Where spawnbot
-			TotalCount 12
-			MaxActive 4
-			SpawnCount 3
-			WaitBetweenSpawns 2
+			Where              spawnbot
+			TotalCount         12
+			MaxActive          4
+			SpawnCount         3
+			WaitBetweenSpawns  2
 			WaitBeforeStarting 0
-			TotalCurrency 100		
-			
+			TotalCurrency      100
 			TFBot
 			{
 				Class Soldier
 				Skill Easy
 			}
 		}
-		
-		WaveSpawn 
+		WaveSpawn // Wave 4.4
 		{
-			
-			WaitForAllSpawned "wave4primarywave"
-			
-			Where spawnbot
-			TotalCount 2
-			MaxActive 2
-			SpawnCount 2
-			WaitBetweenSpawns 15
+			WaitForAllSpawned  wave4primarywave
+			Where              spawnbot
+			TotalCount         2
+			MaxActive          2
+			SpawnCount         2
+			WaitBetweenSpawns  15
 			WaitBeforeStarting 0
-			TotalCurrency 160		
-			
+			TotalCurrency      160
 			TFBot
 			{
 				Template T_TFBot_Giant_Demoman
 			}
 		}
-		WaveSpawn 
+		WaveSpawn // Wave 4.5
 		{
-			
-			WaitForAllSpawned "wave4primarywave"
-			
-			Where spawnbot
-			TotalCount 1
-			MaxActive 1
-			SpawnCount 1
-			WaitBetweenSpawns 15
+			WaitForAllSpawned  wave4primarywave
+			Where              spawnbot
+			TotalCount         1
+			MaxActive          1
+			SpawnCount         1
+			WaitBetweenSpawns  15
 			WaitBeforeStarting 20
-			TotalCurrency 40		
-			
+			TotalCurrency      40
 			TFBot
 			{
 				Template T_TFBot_Giant_Demoman
 			}
 		}
 	}
-	//WAVE 5 //Tank Boss 30k, Giant Demo with pyro escort//Currency 1200 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-	Wave
+	Wave // Wave 5
 	{
 		StartWaveOutput
 		{
 			Target wave_start_relay
 			Action Trigger
 		}
-		DoneOutput					
+		DoneOutput
 		{
 			Target wave_finished_relay
 			Action trigger
 		}
-		WaitWhenDone 65
-		Checkpoint Yes	
-			
-		WaveSpawn 
+		WaitWhenDone    65
+		Checkpoint      Yes
+		WaveSpawn // Wave 5.1
 		{
-			TotalCount 1
+			TotalCount         1
 			WaitBeforeStarting 20
-			TotalCurrency 700
-			
-			FirstSpawnOutput                                                                                                                                                            
-			
+			TotalCurrency      700
+			FirstSpawnOutput
 			{
-				Target boss_spawn_relay                                            
-				Action Trigger                         
+				Target boss_spawn_relay
+				Action Trigger
 			}
-
 			Tank
 			{
-				Health 30000
-				Speed 75
-				Name "tankboss"
-				StartingPathTrackNode "boss_path_a1"
-
-				OnKilledOutput                                  
+				Health                30000
+				Speed                 75
+				Name                  tankboss
+				StartingPathTrackNode boss_path_a1
+				OnKilledOutput
 				{
 					Target boss_dead_relay
-					Action Trigger                         
+					Action Trigger
 				}
-				
-				OnBombDroppedOutput                             
+				OnBombDroppedOutput
 				{
-					Target boss_deploy_relay 
-					Action Trigger                         
+					Target boss_deploy_relay
+					Action Trigger
 				}
-
-			}			
+			}
 		}
-
-		WaveSpawn //WAVE
+		WaveSpawn // Wave 5.2
 		{
-			Where spawnbot
-			TotalCount 15
-			MaxActive 10
-			SpawnCount 5
+			Where              spawnbot
+			TotalCount         15
+			MaxActive          10
+			SpawnCount         5
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 2
-			TotalCurrency 500
-			
-			Squad // Tavish + pyros
+			WaitBetweenSpawns  2
+			TotalCurrency      500
+			Squad
 			{
 				TFBot
 				{
@@ -609,18 +525,17 @@ WaveSchedule
 				TFBot
 				{
 					Class Pyro
-					Skill Easy                                         
+					Skill Easy
 				}
 				TFBot
 				{
 					Class Pyro
-					Skill Easy 
-					//WeaponRestrictions MeleeOnly				
+					Skill Easy
 				}
 				TFBot
 				{
 					Class Pyro
-					Skill Normal                                        
+					Skill Normal
 				}
 				TFBot
 				{
@@ -629,33 +544,29 @@ WaveSchedule
 			}
 		}
 	}
-	//WAVE 6 //Giant Demos, Giant geavy with Quick fix medics, Giant Pyros, Tank Boss 33K, Giant Baseball, scout support.//Currency 1200 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-	Wave
+	Wave // Wave 6
 	{
 		StartWaveOutput
 		{
 			Target wave_start_relay
 			Action Trigger
 		}
-		DoneOutput					
+		DoneOutput
 		{
 			Target humans_win
 			Action RoundWin
 		}
-		WaitWhenDone 65
-		Checkpoint Yes	
-		
-
-		WaveSpawn //WAVE 
+		WaitWhenDone    65
+		Checkpoint      Yes
+		WaveSpawn // Wave 6.1
 		{
-			Where spawnbot
-			TotalCount 4
-			MaxActive 2
-			SpawnCount 2
+			Where              spawnbot
+			TotalCount         4
+			MaxActive          2
+			SpawnCount         2
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 2
-			TotalCurrency 400
-			
+			WaitBetweenSpawns  2
+			TotalCurrency      400
 			Squad
 			{
 				TFBot
@@ -668,18 +579,16 @@ WaveSchedule
 				}
 			}
 		}
-		WaveSpawn //WAVE 
+		WaveSpawn // Wave 6.2
 		{
-			Name "heavywave"
-			
-			Where spawnbot
-			TotalCount 12
-			MaxActive 6
-			SpawnCount 6
+			Name               heavywave
+			Where              spawnbot
+			TotalCount         12
+			MaxActive          6
+			SpawnCount         6
 			WaitBeforeStarting 10
-			WaitBetweenSpawns 1
-			TotalCurrency 100
-			
+			WaitBetweenSpawns  1
+			TotalCurrency      100
 			Squad
 			{
 				TFBot
@@ -708,57 +617,46 @@ WaveSchedule
 				}
 			}
 		}
-		
-		WaveSpawn 
+		WaveSpawn // Wave 6.3
 		{
-			WaitForAllSpawned "heavywave"
-			
-			TotalCount 1
+			WaitForAllSpawned  heavywave
+			TotalCount         1
 			WaitBeforeStarting 25
-			TotalCurrency 400
-			
-			FirstSpawnOutput                                                                                                                                                            
-			
+			TotalCurrency      400
+			FirstSpawnOutput
 			{
-				Target boss_spawn_relay                                            
-				Action Trigger                         
+				Target boss_spawn_relay
+				Action Trigger
 			}
-
 			Tank
 			{
-				Health 33000
-				Speed 75
-				Name "tankboss"
-				Skin 1
-				StartingPathTrackNode "boss_path_a1"
-
-				OnKilledOutput                                  
+				Health                33000
+				Speed                 75
+				Name                  tankboss
+				Skin                  1
+				StartingPathTrackNode boss_path_a1
+				OnKilledOutput
 				{
 					Target boss_dead_relay
-					Action Trigger                         
+					Action Trigger
 				}
-				
-				OnBombDroppedOutput                             
+				OnBombDroppedOutput
 				{
-					Target boss_deploy_relay 
-					Action Trigger                         
+					Target boss_deploy_relay
+					Action Trigger
 				}
-
-			}			
+			}
 		}
-		
-		WaveSpawn 
+		WaveSpawn // Wave 6.4
 		{
-			WaitForAllSpawned "heavywave"
-		
-			Where spawnbot
-			TotalCount 2
-			MaxActive 2
-			SpawnCount 2
+			WaitForAllSpawned  heavywave
+			Where              spawnbot
+			TotalCount         2
+			MaxActive          2
+			SpawnCount         2
 			WaitBeforeStarting 35
-			WaitBetweenSpawns 2
-			TotalCurrency 100
-			
+			WaitBetweenSpawns  2
+			TotalCurrency      100
 			Squad
 			{
 				TFBot
@@ -771,47 +669,450 @@ WaveSchedule
 				}
 			}
 		}
-		// WaveSpawn 
-		// {
-			// WaitForAllSpawned "heavywave"
-		
-			// Where spawnbot
-			// TotalCount 2
-			// MaxActive 2
-			// SpawnCount 2
-			// WaitBeforeStarting 27
-			// WaitBetweenSpawns 2
-			// TotalCurrency 100
-			
-			// Squad
-			// {
-				// TFBot
-				// {
-					// Template T_TFBot_Giant_Scout_Baseball
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Giant_Scout_Baseball
-				// }
-			// }
-		// }
-		
-		WaveSpawn
-		{	
-			Where spawnbot
-			TotalCount 18
-			MaxActive 12
-			SpawnCount 2
+		WaveSpawn // Wave 6.5
+		{
+			Where              spawnbot
+			TotalCount         18
+			MaxActive          12
+			SpawnCount         2
 			WaitBeforeStarting 10
-			WaitBetweenSpawns 10
-			TotalCurrency 100
-			
+			WaitBetweenSpawns  10
+			TotalCurrency      100
 			TFBot
 			{
-				Class Scout
-				Skill Easy
+				Class              Scout
+				Skill              Easy
 				WeaponRestrictions MeleeOnly
-				
+			}
+		}
+	}
+	Templates
+	{
+		// Used 1 times
+		T_OPT_TFBot_Sniper
+		{
+			Class Sniper
+			Skill Expert
+			Name  Sniper
+		}
+		// Used 1 times
+		T_TFBot_Chop_Pyro
+		{
+			Class               Pyro
+			Name                "Chop Chop Chop"
+			Skill               Expert
+			WeaponRestrictions  MeleeOnly
+			Item                "The Third Degree"
+			Item                "The Bubble Pipe"
+			Item                "The Moonman Backpack"
+			Health              65
+			Scale               0.65
+			Attributes          AlwaysCrit
+			CharacterAttributes
+			{
+				"move speed bonus" 3
+				"damage penalty"   0.769
+			}
+		}
+		// Used 1 times
+		T_TFBot_Demoman_Golpher
+		{
+			Name               Golpher
+			Class              Demoman
+			Skill              Expert
+			MaxVisionRange     400
+			Attributes         Aggressive
+			WeaponRestrictions MeleeOnly
+			Item               "Ali Baba's Wee Booties"
+			Item               "The Splendid Screen"
+			Item               "Nessie's Nine Iron"
+			Item               "Glengarry Bonnet"
+			Item               "The Bearded Bombardier"
+		}
+		// Used 1 times
+		T_TFBot_Easy_Pyro
+		{
+			Class              Pyro
+			Skill              Normal
+			WeaponRestrictions PrimaryOnly
+		}
+		// Used 5 times
+		T_TFBot_Giant_Demoman
+		{
+			Class               Demoman
+			Name                "Giant Rapid Fire Demoman"
+			ClassIcon           demo_giant
+			Skill               Expert
+			Health              3300
+			WeaponRestrictions  PrimaryOnly
+			Attributes          HoldFireUntilFullReload
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"faster reload rate"                -0.4
+				"fire rate bonus"                   0.75
+				"damage force reduction"            0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set"       4
+			}
+		}
+		// Used 1 times
+		T_TFBot_Giant_Dizzy_Penis
+		{
+			Class               Soldier
+			Name                "Giant Dizzy Penis"
+			ClassIcon           soldier_crit
+			Skill               Normal
+			Health              3800
+			Item                "Direct Hit"
+			Attributes          AlwaysCrit
+			WeaponRestrictions  PrimaryOnly
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"faster reload rate"                2
+				"fire rate penalty"                 2.5
+				"damage force reduction"            0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set"       3
+			}
+		}
+		// Used 1 times
+		T_TFBot_Giant_Heavyweapons
+		{
+			Class               Heavyweapons
+			Name                "Giant Heavy"
+			ClassIcon           heavy_giant
+			Skill               Expert
+			Health              5000
+			WeaponRestrictions  PrimaryOnly
+			MaxVisionRange      1200
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage bonus"                      1.5
+				"damage force reduction"            0.3
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set"       2
+			}
+		}
+		// Used 1 times
+		T_TFBot_Giant_Phlog_Pyro
+		{
+			Class               Pyro
+			Name                "Giant Phlogistinator"
+			Health              3000
+			Skill               Expert
+			Item                "The Phlogistinator"
+			Item                "The Manmelter"
+			Item                "The Third Degree"
+			Item                "The Bubble Pipe"
+			Item                "The Moonman Backpack"
+			Attributes          SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"fire rate bonus"                   1
+				"damage force reduction"            0.6
+				"airblast vulnerability multiplier" 0.6
+				"override footstep sound set"       6
+			}
+		}
+		// Used 3 times
+		T_TFBot_Giant_Pyro
+		{
+			Class               Pyro
+			Name                "Giant Pyro"
+			ClassIcon           pyro_giant
+			Skill               Expert
+			Health              3000
+			WeaponRestrictions  PrimaryOnly
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage force reduction"            0.6
+				"airblast vulnerability multiplier" 0.6
+				"override footstep sound set"       6
+			}
+		}
+		// Used 1 times
+		T_TFBot_Giant_Scoot_A_Loo
+		{
+			Class               Scout
+			Name                "Scoot A Loo"
+			ClassIcon           scout_giant
+			Health              700
+			Item                "TTG Max Pistol"
+			Item                "Scout Beanie"
+			WeaponRestrictions  SecondaryOnly
+			MaxVisionRange      800
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"clip size bonus"                   10
+				"fire rate bonus"                   5
+				"damage force reduction"            0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set"       5
+			}
+		}
+		// Used 1 times
+		T_TFBot_Giant_Soldier_Bazooka
+		{
+			Class               Soldier
+			Name                "Giant Vagabond"
+			Health              3800
+			Attributes          AlwaysCrit
+			Attributes          HoldFireUntilFullReload
+			Item                "The Beggar's Bazooka"
+			WeaponRestrictions  PrimaryOnly
+			CharacterAttributes
+			{
+				"move speed bonus"                  0.5
+				"damage force reduction"            0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set"       3
+			}
+		}
+		// Used 1 times
+		T_TFBot_Giant_Tank_Buster
+		{
+			Class               Soldier
+			Name                "Giant Tank Buster"
+			ClassIcon           soldier_giant
+			Skill               Expert
+			Health              3800
+			Item                "The Black Box"
+			Item                "The Battalion's Backup"
+			Item                "The Grenadier's Softcap"
+			Attributes          SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"clip size bonus"                   3
+				"move speed bonus"                  0.5
+				"damage force reduction"            0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set"       3
+				"dmg bonus vs building"             2
+			}
+		}
+		// Used 1 times
+		T_TFBot_Heavyweapons_Bear
+		{
+			Class               Heavyweapons
+			Name                "Bear Hands"
+			Skill               Expert
+			ClassIcon           heavy_champ
+			WeaponRestrictions  SecondaryOnly
+			Item                "The Brass Beast"
+			Item                "The Buffalo Steak Sandvich"
+			Item                "Warrior's Spirit"
+			CharacterAttributes
+			{
+				"dmg taken from crit reduced" 0.7
+				"lunchbox adds minicrits"     2
+			}
+		}
+		// Used 1 times
+		T_TFBot_Heavyweapons_Gnome
+		{
+			Class               Heavyweapons
+			Name                "Heavy Mittens"
+			Skill               Easy
+			ClassIcon           heavy_mittens
+			Scale               0.65
+			WeaponRestrictions  MeleeOnly
+			Health              60
+			Attributes          AlwaysCrit
+			Item                "The All-Father"
+			Item                "Point and Shoot"
+			Item                "The Holiday Punch"
+			CharacterAttributes
+			{
+				"move speed bonus" 1.3
+				"damage bonus"     0.2
+			}
+		}
+		// Used 5 times
+		T_TFBot_Heavyweapons_Heavyweight_Champ
+		{
+			Class              Heavyweapons
+			Name               "Heavyweight Champ"
+			Skill              Easy
+			ClassIcon          heavy_champ
+			WeaponRestrictions MeleeOnly
+			Item               "the killing gloves of boxing"
+			Item               "Pugilist's Protector"
+		}
+		// Used 2 times
+		T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
+		{
+			Class              Heavyweapons
+			Name               "Heavyweight Champ"
+			Skill              Easy
+			ClassIcon          heavy_gru
+			WeaponRestrictions MeleeOnly
+			Item               "Gloves of Running Urgently"
+		}
+		// Used 1 times
+		T_TFBot_Heavyweapons_Rock
+		{
+			Class               Heavyweapons
+			Name                "Rock 'em Sock 'em"
+			Skill               Expert
+			Health              150
+			Scale               0.4
+			WeaponRestrictions  MeleeOnly
+			Item                "The Eviction Notice"
+			Item                "Pugilist's Protector"
+			Attributes          AlwaysCrit
+			CharacterAttributes
+			{
+				"dmg taken from crit reduced" 0.1
+			}
+		}
+		// Used 1 times
+		T_TFBot_King_Spy
+		{
+			Name                "King Spy"
+			Health              600
+			Class               Spy
+			Skill               Expert
+			Scale               0.1
+			MaxVisionRange      4000
+			Attributes          Aggressive
+			Item                "The Dead Ringer"
+			Item                "The Enforcer"
+			Item                "Conniver's Kunai"
+			Item                "Charmer's Chapeau"
+			Item                "Rogue's Col Roule"
+			CharacterAttributes
+			{
+				"damage bonus"             1.5
+				"overheal decay disabled"  1
+				"set cloak is feign death" 1
+				"move speed bonus"         510
+			}
+		}
+		// Used 5 times
+		T_TFBot_Medic_QuickFix
+		{
+			Class              Medic
+			Name               "Quick-Fix Medic"
+			Skill              Easy
+			Item               "The Quick-Fix"
+			WeaponRestrictions SecondaryOnly
+		}
+		// Used 1 times
+		T_TFBot_Minion_Spy
+		{
+			Name                "Minion Spy"
+			Health              60
+			Class               Spy
+			Skill               Expert
+			MaxVisionRange      4000
+			Attributes          Agressive
+			BehaviorModifiers   Mobber
+			Item                "The Dead Ringer"
+			Item                "The Enforcer"
+			Item                "Conniver's Kunai"
+			Item                "Charmer's Chapeau"
+			Item                "Rogue's Col Roule"
+			CharacterAttributes
+			{
+				"overheal decay disabled"  1
+				"set cloak is feign death" 1
+				"move speed bonus"         110
+			}
+		}
+		// Used 1 times
+		T_TFBot_Phlog_Pyro
+		{
+			Class      Pyro
+			Name       Phlogistinator
+			Skill      Expert
+			Item       "The Phlogistinator"
+			Item       "The Manmelter"
+			Item       "The Third Degree"
+			Item       "The Bubble Pipe"
+			Item       "The Moonman Backpack"
+			Attributes SpawnWithFullCharge
+		}
+		// Used 1 times
+		T_TFBot_Pyro
+		{
+			Class Pyro
+			Skill Expert
+			Item  "Respectless Rubber Glove"
+		}
+		// Used 1 times
+		T_TFBot_Pyro_Flaregun
+		{
+			Class              Pyro
+			Name               "Flare Pyro"
+			Skill              Normal
+			ClassIcon          pyro_flare
+			Item               "The Flare Gun"
+			WeaponRestrictions SecondaryOnly
+		}
+		// Used 1 times
+		T_TFBot_Sap_Spy
+		{
+			Class              Spy
+			Skill              Hard
+			Name               "How does I secret agent man"
+			WeaponRestrictions SecondaryOnly
+			Item               "The Red-Tape Recorder"
+		}
+		// Used 1 times
+		T_TFBot_SentryBuster
+		{
+			Class               Demoman
+			Name                "Sentry Buster"
+			Skill               Expert
+			Health              2500
+			Item                "The Ullapool Caber"
+			WeaponRestrictions  MeleeOnly
+			ClassIcon           sentry_buster
+			CharacterAttributes
+			{
+				"move speed bonus"                  2
+				"damage force reduction"            0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set"       7
+				"cannot be backstabbed"             1
+			}
+		}
+		// Used 1 times
+		T_TFBot_Soldier_Bazooka
+		{
+			Class              Soldier
+			Name               Vagabond
+			Item               "The Beggar's Bazooka"
+			Attributes         HoldFireUntilFullReload
+			WeaponRestrictions PrimaryOnly
+		}
+		// Used 1 times
+		T_TFBot_Spy
+		{
+			Class Spy
+			Skill Expert
+			Item  "The Stealth Steeler"
+		}
+		// Used 1 times
+		T_TFBot_Tank_Buster
+		{
+			Class               Soldier
+			Name                "Tank Buster"
+			ClassIcon           soldier
+			Skill               Expert
+			Item                "The Black Box"
+			Item                "The Battalion's Backup"
+			Item                "The Grenadier's Softcap"
+			Attributes          SpawnWithFullCharge
+			CharacterAttributes
+			{
+				"dmg bonus vs building" 1.2
 			}
 		}
 	}

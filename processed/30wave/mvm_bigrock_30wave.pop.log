@@ -1,105 +1,109 @@
-07/13/2013 11:53:28 PM [INFO    ]: Loading includes/robot_giant.pop
-07/13/2013 11:53:28 PM [INFO    ]: Loading includes/robot_standard.pop
-07/13/2013 11:53:28 PM [INFO    ]: Valid spawns loaded:
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot_giant
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot_mission_sniper
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot_mission_spy
-07/13/2013 11:53:28 PM [INFO    ]: Loaded 135 templates.
-07/13/2013 11:53:28 PM [INFO    ]: Finished scanning: 0 warnings, 0 errors.
-07/13/2013 11:53:28 PM [INFO    ]: Used templates: 92
-07/13/2013 11:53:28 PM [INFO    ]: Template T_NINJA_SPY: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Accurate_Sniper: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Alademo: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Astronomer: Used 6 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Axtinguisher: Used 10 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Backburner: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Boom_Maker: Used 6 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Boomer: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Boxer: Used 10 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Butcher: Used 7 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Chef: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Comedian: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Critical_Medic: Used 10 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Croc_Skinner: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Damage_Hurter: Used 3 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Electric_Pyro: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Elf: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Fan_of_The_Crit: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Fast_Rocket_Soldier: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Fireworks_Salesman: Used 7 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Gangster: Used 10 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Goldgun: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Healer_Medic: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_I_hit_I_live: Used 7 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Indian_Sniper: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Iron_Heavy: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Likes_Sentries: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Lord_Cockswain: Used 6 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Milkman: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Minicrit_Soldier: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_NataHeavy: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Natascha: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Ninja_Spy: Used 10 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Not_Deadring_Spy: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Over_Medic: Used 6 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_PLAY_BALL: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Painis_Cupcake: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Pirate: Used 3 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Pirate_Cannoneer: Used 14 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Piss_Thrower: Used 10 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Pistol_Scout: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Poison_Bleeder: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Pyromancer: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Resistant_Solider: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Robin_Hood: Used 7 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Robopan: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Rocket_Soldier: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Sahara_Spy: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Samurai_Soldier: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Sasha_Heavy: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Scattergun_Scout: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Sharp_Sider: Used 10 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Shivlover: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Shooter_Spy: Used 7 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Shotgun_Heavy: Used 7 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Shotgun_Soldier: Used 7 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_So_Fast: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Solar_Crit: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Speed_Hurter: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Spy_Sapper: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Sticky_Demo: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Super_Sapper_Spy: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Sydney_Sleeper_Sniper: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Syringe_Medic: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_King_Knight: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Demoman: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Heavy: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Medic: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Pyro: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Scout: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Sniper: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Soldier: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Spy: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_This_is_DEMOKNIGHT: Used 9 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Wrestler: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Yo_What_s_up: Used 6 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_iSpy: Used 8 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Engineer_Sentry_Tele_Battle: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Demo_RapidFire: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Heavyweapons: Used 6 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Heavyweapons_Deflector: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Medic: Used 3 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Pyro: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Pyro_Flare_Spammer: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Scout: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Scout_Fast: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Soldier_Crit: Used 4 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Soldier_Spammer: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Medic_QuickFix: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Medic_QuickUber: Used 3 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Medic_SlowRecharge: Used 11 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_SentryBuster: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Saving to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\30wave\mvm_bigrock_30wave.pop...
-07/13/2013 11:53:28 PM [INFO    ]: Saved 92 templates to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\30wave\mvm_bigrock_30wave.pop (43 skipped).
-07/13/2013 11:53:28 PM [INFO    ]: Exported to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\30wave\mvm_bigrock_30wave.pop.
+07/13/2013 11:56:54 PM [INFO    ]: Loading includes/robot_giant.pop
+07/13/2013 11:56:54 PM [INFO    ]: Loading includes/robot_standard.pop
+07/13/2013 11:56:54 PM [INFO    ]: Valid spawns loaded:
+07/13/2013 11:56:54 PM [INFO    ]:   spawnbot
+07/13/2013 11:56:54 PM [INFO    ]:   spawnbot_giant
+07/13/2013 11:56:54 PM [INFO    ]:   spawnbot_mission_sniper
+07/13/2013 11:56:54 PM [INFO    ]:   spawnbot_mission_spy
+07/13/2013 11:56:55 PM [INFO    ]: Loaded 135 templates.
+07/13/2013 11:56:55 PM [WARNING ]: ['src/30wave/mvm_bigrock_30wave.pop'] > WaveSchedule/Wave[3]/WaveSpawn[0]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/30wave/mvm_bigrock_30wave.pop'] > WaveSchedule/Wave[6]/WaveSpawn[0]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/30wave/mvm_bigrock_30wave.pop'] > WaveSchedule/Wave[6]/WaveSpawn[1]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/30wave/mvm_bigrock_30wave.pop'] > WaveSchedule/Wave[17]/WaveSpawn[0]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
+07/13/2013 11:56:55 PM [INFO    ]: Finished scanning: 4 warnings, 0 errors.
+07/13/2013 11:56:55 PM [INFO    ]: Used templates: 92
+07/13/2013 11:56:55 PM [INFO    ]: Template T_NINJA_SPY: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Accurate_Sniper: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Alademo: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Astronomer: Used 6 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Axtinguisher: Used 10 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Backburner: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Boom_Maker: Used 6 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Boomer: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Boxer: Used 10 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Butcher: Used 7 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Chef: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Comedian: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Critical_Medic: Used 10 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Croc_Skinner: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Damage_Hurter: Used 3 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Electric_Pyro: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Elf: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Fan_of_The_Crit: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Fast_Rocket_Soldier: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Fireworks_Salesman: Used 7 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Gangster: Used 10 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Goldgun: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Healer_Medic: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_I_hit_I_live: Used 7 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Indian_Sniper: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Iron_Heavy: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Likes_Sentries: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Lord_Cockswain: Used 6 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Milkman: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Minicrit_Soldier: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_NataHeavy: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Natascha: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Ninja_Spy: Used 10 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Not_Deadring_Spy: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Over_Medic: Used 6 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_PLAY_BALL: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Painis_Cupcake: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Pirate: Used 3 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Pirate_Cannoneer: Used 14 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Piss_Thrower: Used 10 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Pistol_Scout: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Poison_Bleeder: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Pyromancer: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Resistant_Solider: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Robin_Hood: Used 7 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Robopan: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Rocket_Soldier: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Sahara_Spy: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Samurai_Soldier: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Sasha_Heavy: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Scattergun_Scout: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Sharp_Sider: Used 10 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Shivlover: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Shooter_Spy: Used 7 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Shotgun_Heavy: Used 7 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Shotgun_Soldier: Used 7 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_So_Fast: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Solar_Crit: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Speed_Hurter: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Spy_Sapper: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Sticky_Demo: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Super_Sapper_Spy: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Sydney_Sleeper_Sniper: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Syringe_Medic: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_King_Knight: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Demoman: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Heavy: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Medic: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Pyro: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Scout: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Sniper: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Soldier: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_The_Leader_Spy: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_This_is_DEMOKNIGHT: Used 9 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Wrestler: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Yo_What_s_up: Used 6 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_iSpy: Used 8 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Engineer_Sentry_Tele_Battle: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Demo_RapidFire: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Heavyweapons: Used 6 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Heavyweapons_Deflector: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Medic: Used 3 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Pyro: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Pyro_Flare_Spammer: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Scout: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Scout_Fast: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Soldier_Crit: Used 4 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Soldier_Spammer: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Medic_QuickFix: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Medic_QuickUber: Used 3 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Medic_SlowRecharge: Used 11 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_SentryBuster: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Saving to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\30wave\mvm_bigrock_30wave.pop...
+07/13/2013 11:56:55 PM [INFO    ]: Saved 92 templates to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\30wave\mvm_bigrock_30wave.pop (43 skipped).
+07/13/2013 11:56:55 PM [INFO    ]: Exported to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\30wave\mvm_bigrock_30wave.pop.

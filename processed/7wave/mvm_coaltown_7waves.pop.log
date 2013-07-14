@@ -1,49 +1,49 @@
-07/13/2013 11:53:28 PM [INFO    ]: Loading includes/robot_standard_7waves.pop
-07/13/2013 11:53:28 PM [INFO    ]: Loading includes/robot_giant_7waves.pop
-07/13/2013 11:53:28 PM [INFO    ]: Valid spawns loaded:
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot_giant
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot_invasion
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot_mission_sniper
-07/13/2013 11:53:28 PM [INFO    ]:   spawnbot_mission_spy
-07/13/2013 11:53:28 PM [INFO    ]: Loaded 67 templates.
-07/13/2013 11:53:28 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[0]/Description:  Unidentified key "Description"!
-07/13/2013 11:53:28 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[2]/WaveSpawn[0]/FirstSpawnOutput:  Unidentified key "FirstSpawnOutput"!
-07/13/2013 11:53:28 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[2]/WaveSpawn[0]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
-07/13/2013 11:53:28 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[4]/WaveSpawn[0]/FirstSpawnOutput:  Unidentified key "FirstSpawnOutput"!
-07/13/2013 11:53:28 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[4]/WaveSpawn[0]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
-07/13/2013 11:53:28 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[5]/WaveSpawn[2]/FirstSpawnOutput:  Unidentified key "FirstSpawnOutput"!
-07/13/2013 11:53:28 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[5]/WaveSpawn[2]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
-07/13/2013 11:53:28 PM [INFO    ]: Finished scanning: 7 warnings, 0 errors.
-07/13/2013 11:53:28 PM [INFO    ]: Used templates: 28
-07/13/2013 11:53:28 PM [INFO    ]: Template T_OPT_TFBot_Sniper: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Chop_Pyro: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Demoman_Golpher: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Easy_Pyro: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Demoman: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Dizzy_Penis: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Heavyweapons: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Phlog_Pyro: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Pyro: Used 3 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Scoot_A_Loo: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Soldier_Bazooka: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Giant_Tank_Buster: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Heavyweapons_Bear: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Heavyweapons_Gnome: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Heavyweapons_Heavyweight_Champ: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Heavyweapons_Heavyweight_Champ_Fast: Used 2 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Heavyweapons_Rock: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_King_Spy: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Medic_QuickFix: Used 5 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Minion_Spy: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Phlog_Pyro: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Pyro: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Pyro_Flaregun: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Sap_Spy: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_SentryBuster: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Soldier_Bazooka: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Spy: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Template T_TFBot_Tank_Buster: Used 1 times.
-07/13/2013 11:53:28 PM [INFO    ]: Saving to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\7wave\mvm_coaltown_7waves.pop...
-07/13/2013 11:53:28 PM [INFO    ]: Saved 28 templates to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\7wave\mvm_coaltown_7waves.pop (39 skipped).
-07/13/2013 11:53:28 PM [INFO    ]: Exported to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\7wave\mvm_coaltown_7waves.pop.
+07/13/2013 11:56:55 PM [INFO    ]: Loading includes/robot_standard_7waves.pop
+07/13/2013 11:56:55 PM [INFO    ]: Loading includes/robot_giant_7waves.pop
+07/13/2013 11:56:55 PM [INFO    ]: Valid spawns loaded:
+07/13/2013 11:56:55 PM [INFO    ]:   spawnbot
+07/13/2013 11:56:55 PM [INFO    ]:   spawnbot_giant
+07/13/2013 11:56:55 PM [INFO    ]:   spawnbot_invasion
+07/13/2013 11:56:55 PM [INFO    ]:   spawnbot_mission_sniper
+07/13/2013 11:56:55 PM [INFO    ]:   spawnbot_mission_spy
+07/13/2013 11:56:55 PM [INFO    ]: Loaded 67 templates.
+07/13/2013 11:56:55 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[0]/Description:  Unidentified key "Description"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[2]/WaveSpawn[0]/FirstSpawnOutput:  Unidentified key "FirstSpawnOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[2]/WaveSpawn[0]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[4]/WaveSpawn[0]/FirstSpawnOutput:  Unidentified key "FirstSpawnOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[4]/WaveSpawn[0]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[5]/WaveSpawn[2]/FirstSpawnOutput:  Unidentified key "FirstSpawnOutput"!
+07/13/2013 11:56:55 PM [WARNING ]: ['src/7wave/mvm_coaltown_7waves.pop'] > WaveSchedule/Wave[5]/WaveSpawn[2]/Tank/OnKilledOutput:  Unidentified key "OnKilledOutput"!
+07/13/2013 11:56:55 PM [INFO    ]: Finished scanning: 7 warnings, 0 errors.
+07/13/2013 11:56:55 PM [INFO    ]: Used templates: 28
+07/13/2013 11:56:55 PM [INFO    ]: Template T_OPT_TFBot_Sniper: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Chop_Pyro: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Demoman_Golpher: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Easy_Pyro: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Demoman: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Dizzy_Penis: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Heavyweapons: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Phlog_Pyro: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Pyro: Used 3 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Scoot_A_Loo: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Soldier_Bazooka: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Giant_Tank_Buster: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Heavyweapons_Bear: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Heavyweapons_Gnome: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Heavyweapons_Heavyweight_Champ: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Heavyweapons_Heavyweight_Champ_Fast: Used 2 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Heavyweapons_Rock: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_King_Spy: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Medic_QuickFix: Used 5 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Minion_Spy: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Phlog_Pyro: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Pyro: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Pyro_Flaregun: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Sap_Spy: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_SentryBuster: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Soldier_Bazooka: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Spy: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Template T_TFBot_Tank_Buster: Used 1 times.
+07/13/2013 11:56:55 PM [INFO    ]: Saving to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\7wave\mvm_coaltown_7waves.pop...
+07/13/2013 11:56:55 PM [INFO    ]: Saved 28 templates to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\7wave\mvm_coaltown_7waves.pop (39 skipped).
+07/13/2013 11:56:55 PM [INFO    ]: Exported to C:\Users\Rob\Documents\Projects\failtrain-30wave-popfiles\processed\7wave\mvm_coaltown_7waves.pop.

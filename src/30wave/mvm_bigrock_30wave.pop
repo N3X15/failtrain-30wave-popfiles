@@ -2106,6 +2106,11 @@ WaveSchedule
 				Speed                 75
 				Name                  tankboss
 				StartingPathTrackNode boss_path_a1
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
 				OnBombDroppedOutput
 				{
 					Target boss_deploy_relay
@@ -2423,7 +2428,7 @@ WaveSchedule
 				MaxVisionRange      1200
 				Item                "The Atomizer"
 				Item                "Flight of the Monarch"
-				Item                "Flunkyware"
+				Item                Flunkyware
 				Item                "Hanger-On Hood"
 				CharacterAttributes
 				{
@@ -2770,6 +2775,11 @@ WaveSchedule
 				Speed                 75
 				Name                  tankboss
 				StartingPathTrackNode boss_path_a1
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
 				OnBombDroppedOutput
 				{
 					Target boss_deploy_relay
@@ -2788,6 +2798,11 @@ WaveSchedule
 				Speed                 75
 				Name                  tankboss
 				StartingPathTrackNode boss_path_a1
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
 				OnBombDroppedOutput
 				{
 					Target boss_deploy_relay
@@ -5759,6 +5774,11 @@ WaveSchedule
 				Name                  tankboss
 				StartingPathTrackNode boss_path_a1
 				Skin                  1
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
 				OnBombDroppedOutput
 				{
 					Target boss_deploy_relay

@@ -104,6 +104,13 @@ stats={
 	'errors':0
 }
 
+# Duh.  Used for Where validation.
+ValidSpawns=[
+	# These ones are virtual.
+	'BEHIND',
+	'AHEAD'
+]
+
 # Load up our #base include
 def importTemplates(file):
 	_kv = KeyValues()
@@ -111,6 +118,14 @@ def importTemplates(file):
 	_kv.load(file)
 	for id in _kv['Templates']:
 		importTemplate(id,_kv['Templates'][id])
+
+def importSpawnPoints(file):
+	with open(file,'r') as f:
+		log.info('Valid spawns loaded:')
+		for line in f:
+			line=line.strip()
+			ValidSpawns.append(line)
+			log.info('  '+line)
 
 # Actually import the template
 def importTemplate(id,template):
@@ -273,6 +288,10 @@ def scanForInvalidTemplates(kv,file,path):
 					elif type(value) is KeyValues:
 						kv.set_comment(key,'Wave {0}.{1}'.format(parentWaveNumber+1,1),1)
 			continue
+		if key == 'Where':
+			if value not in ValidSpawns:
+				log.warning('{0} > {1}:  Spawnpoint "{2}" not defined on the map!'.format(file,cwd,value))
+				stats['warnings']+=1
 		if key == 'Template':
 			if value not in templates:
 				log.warning('{0} > {1}:  Unable to find Template "{2}"!'.format(file,cwd,value))
@@ -325,6 +344,8 @@ parser = argparse.ArgumentParser(description='Clean up and optimize TF2 MvM Popf
 parser.add_argument('-o', '--output', nargs='?', default='', help='Specify where the completed file should go')
 # -i --include Include templates from a file
 parser.add_argument('-i', '--include', nargs='*', default=['includes/robot_giant.pop','includes/robot_standard.pop'], help='Include templates from a file')
+# -s --spawnpoints Load valid spawnpoint targetnames from a file
+parser.add_argument('-s', '--spawnpoints', nargs='?', default='', help='Load valid spawnpoint targetnames from a file')
 parser.add_argument('input_file', nargs=1, help='The popfile to be processed.')
 
 args  = parser.parse_args()
@@ -341,7 +362,10 @@ log.basicConfig(format='%(asctime)s [%(levelname)-8s]: %(message)s', datefmt='%m
 
 for included_file in args.include:
 	importTemplates(included_file)
-	
+
+if args.spawnpoints != '':
+	importSpawnPoints(args.spawnpoints)
+
 kv = KeyValues()
 kv.load(sys.argv[1])
 if 'Templates' in kv:
